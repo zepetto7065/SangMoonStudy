@@ -1,0 +1,32 @@
+VMware 설치 및 우분투 환경 설정 (2020/11/30)
+
+목표
+- 집에 놀고 있는 데스크탑이나 노트북을 서버로 구축해보자 
+( 참고 - https://jhnyang.tistory.com/233 블로그 )
+
+1. VMware 설치
+다운로드 주소 : https://my.vmware.com/web/vmware/downloads/#all_products 
+또는 설치 파일있으시면 설치 진행
+
+- 설치 도중 Window10 version에 관한 이슈 발생 -> 제어판 > window 기능 켜기 끄기 > 가상 머신 플랫폼 , Window 하이퍼 바이저 플랫폼 기능 해제 
+- 그래도 안되면 cmd창에 'bcdedit /set hypervisorlanunchtype off' 를 쳐준다
+
+2. 우분투
+- 위에 설정만 이상없다면 unbuntu iso 파일에 의해 자동 설치 진행됨
+- ubuntu 16.04.6 설치
+- VMware 네트워크 설정을 해야 외부인터넷 등 통신 가능 -> VM >settings > Network Adapter -> NAT ( 공유기를 share 함을 의미 ), Host-only(내부통신만) 등
+
+- 대략 5-10분 소요된다.
+- 로그인 화면 설치시 정해놓은 ID/PW로 로그인
+
+- NAT로 연결했기떄문에 인터넷이 가능하다
+- ifconfig -> ip확인 > 할당된 ip 확인 가능 , 내 바탕화면에 cmd > ipconfig 로 확인해보면 VMware ip 가 추가 됨을 확인할 수 있다.
+- Edit > Virtual Network Editor 로 자세하게 확인 가능
+- ping 내 공인 IP(window)로 통신 확인 가능
+- 서브넷 마스크 255.255.255.0 
+- 통신 확인 네트워크 설정 간단히 끝
+- snapshop > 현재 상태를 저장하는 기능 - 설치하다가 꼬였을 경우 돌아 갈수 있다. >>> VM > snapshop > 이름 작성 Take snapshop
+- snapshop manage로 돌아갈 수 있다. 
+
+
+
