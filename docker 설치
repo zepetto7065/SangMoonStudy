@@ -1,0 +1,98 @@
+docker 설치
+
+목표 우분투에 도커를 설치해보자
+
+- VMware 전체 화면 설정 > View > FullScreen
+- Network bridge > 공인 IP 할당 받기 위해 설정
+vmware를 향하도록 하는 ip를 설정
+*network connection 종류
+1. bridged - 공인 ip 할당
+2. nat - 사설 ip 공유
+3. host-only - 인터넷 x
+- Virtual Network - Editor External Connection 의 종류를 이더넷에 맞게 설정
+- 버전에 맞게 설치
+
+#vm 복사/붙여넣기하기 위해 vmTools를 설치 한다
+해당 서버 우클릭 > setting > CD/DVD(sata) > 설치한 파일
+
+
+
+# 도커 설치 전 
+1. sudo 로긴
+
+2.패키지 정보 업데이트 및 CA certificates 설치, APT가 https로 동작하도록 설치
+sudo apt-get update
+sudo apt-get install apt-transport-https ca-certificates
+
+3. GPG key 추가
+sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+
+4. 내용 추가
+deb https://apt.dockerproject.org/repo ubuntu-xenial main
+
+5. APT package index 업데이트 
+sudo apt-get update
+
+6. 오래된 저장소를 삭제한다.
+sudo apt-get purge lxc-docker
+
+7. 올바른 저장소에서 받은 지 검증
+apt-cache policy docker-engine
+
+8. linux-image-extra 패키지 설치
+sudo apt-get install linux-image-extra-$(uname -r)
+
+# 설치
+1. sudo 로긴
+
+2. APT package index를 업데이트
+ sudo apt-get update
+
+3. Docker 설치
+sudo apt-get install docker-engine
+
+4. docker daemon을 시작한다.
+sudo service docker start
+
+5. docker 설치 확인
+sudo docker run hello-world
+
+# Docker Group 생성
+1. sudo
+
+2. docker group 생성
+sudo groupadd docker
+
+3. 사용자 계정을 docker group에 추가
+sudo usermod -aG docker $user
+
+4. 로그아웃 후 다시 로그인
+
+5. sudo 권한 없이 docker container 기동하는지 확인
+docker run hello-world
+
+#Enable UFW forwarding
+1. sudo 로긴
+
+2. UFW가 설치되어 있고 enable 되어 있는지 확인
+sudo ufw status
+
+3. /etc/default/ufw 파일을 열어서 DEFAULT_FORWARD_POLICY 설정
+DEFAULT_FORWARD_POLICY="ACCEPT"
+
+4. 새로운 설정을 반영하기 위해 UFW 를 다시 로딩
+sudo ufw reload
+
+5. Docker port 오픈
+sudo ufw allow 2375/tcp
+
+#삭제
+
+1. Docker package 삭제
+sudo apt-get purge docker-engine
+
+2. Docker package 와 의존성있는 파일 모두 삭제
+sudo apt-get autoremove --perge docker-engine
+이 명령어로 image , container , volume 들과 사용자 설정 파일이 삭제되지는 않는다
+/var/lib/docker 디렉토리를 삭제 한다
+rm -rf /var/lib/docker

@@ -13,7 +13,7 @@ VMware 설치 및 우분투 환경 설정 (2020/11/30)
 
 2. 우분투
 - 위에 설정만 이상없다면 unbuntu iso 파일에 의해 자동 설치 진행됨
-- ubuntu 16.04.6 설치
+- ubuntu 18.04.5 live 설치 -> desktop은 사용자용 , server용을 설치하자
 - VMware 네트워크 설정을 해야 외부인터넷 등 통신 가능 -> VM >settings > Network Adapter -> NAT ( 공유기를 share 함을 의미 ), Host-only(내부통신만) 등
 
 - 대략 5-10분 소요된다.
