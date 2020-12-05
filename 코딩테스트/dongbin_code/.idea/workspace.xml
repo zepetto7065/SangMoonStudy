@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4d9ca9b9-dc1c-4d0f-b5bb-0180a4bdf73c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1hpF46JMfZMIBeZygR0phOrZFuq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="dongbin_code" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="dongbin_code" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.9-1">
+    <configuration name="8-5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dongbin_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8-5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="8-6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dongbin_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8-6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="8-7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dongbin_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8-7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="8-8" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dongbin_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8-8.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="9-1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dongbin_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/9-1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.9-1" />
+        <item itemvalue="Python.8-8" />
+        <item itemvalue="Python.8-7" />
+        <item itemvalue="Python.8-6" />
+        <item itemvalue="Python.8-5" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d9ca9b9-dc1c-4d0f-b5bb-0180a4bdf73c" name="Default Changelist" comment="" />
+      <created>1600699933821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600699933821</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="594" y="197" key="#Inspections" timestamp="1600700751985">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="594" y="197" key="#Inspections/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1600700751985" />
+    <state x="371" y="169" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601083176163">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state x="371" y="169" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.952@0.23.1680.952" timestamp="1601083176163" />
+    <state x="424" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1600702522773" />
+    <state x="720" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603717829347">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="720" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603717829347" />
+    <state x="825" y="243" key="EnvironmentVariablesDialog" timestamp="1600702457988">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="825" y="243" key="EnvironmentVariablesDialog/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1600702457988" />
+    <state width="1659" height="314" key="GridCell.Tab.0.bottom" timestamp="1604632051516">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state width="1659" height="240" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1600789242115" />
+    <state width="1659" height="239" key="GridCell.Tab.0.bottom/0.23.1680.949@0.23.1680.949" timestamp="1603770471755" />
+    <state width="1659" height="314" key="GridCell.Tab.0.bottom/0.23.1680.952@0.23.1680.952" timestamp="1604632051516" />
+    <state width="1659" height="314" key="GridCell.Tab.0.bottom/0.23.1680.954@0.23.1680.954" timestamp="1603941106874" />
+    <state width="1899" height="249" key="GridCell.Tab.0.bottom/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603719145517" />
+    <state width="1659" height="314" key="GridCell.Tab.0.center" timestamp="1604632051515">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state width="1659" height="240" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1600789242114" />
+    <state width="1659" height="239" key="GridCell.Tab.0.center/0.23.1680.949@0.23.1680.949" timestamp="1603770471755" />
+    <state width="1659" height="314" key="GridCell.Tab.0.center/0.23.1680.952@0.23.1680.952" timestamp="1604632051515" />
+    <state width="1659" height="314" key="GridCell.Tab.0.center/0.23.1680.954@0.23.1680.954" timestamp="1603941106873" />
+    <state width="1899" height="249" key="GridCell.Tab.0.center/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603719145516" />
+    <state width="1659" height="314" key="GridCell.Tab.0.left" timestamp="1604632051515">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state width="1659" height="240" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1600789242114" />
+    <state width="1659" height="239" key="GridCell.Tab.0.left/0.23.1680.949@0.23.1680.949" timestamp="1603770471754" />
+    <state width="1659" height="314" key="GridCell.Tab.0.left/0.23.1680.952@0.23.1680.952" timestamp="1604632051515" />
+    <state width="1659" height="314" key="GridCell.Tab.0.left/0.23.1680.954@0.23.1680.954" timestamp="1603941106873" />
+    <state width="1899" height="249" key="GridCell.Tab.0.left/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603719145516" />
+    <state width="1659" height="314" key="GridCell.Tab.0.right" timestamp="1604632051516">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state width="1659" height="240" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1600789242114" />
+    <state width="1659" height="239" key="GridCell.Tab.0.right/0.23.1680.949@0.23.1680.949" timestamp="1603770471755" />
+    <state width="1659" height="314" key="GridCell.Tab.0.right/0.23.1680.952@0.23.1680.952" timestamp="1604632051516" />
+    <state width="1659" height="314" key="GridCell.Tab.0.right/0.23.1680.954@0.23.1680.954" timestamp="1603941106874" />
+    <state width="1899" height="249" key="GridCell.Tab.0.right/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603719145517" />
+    <state width="1659" height="314" key="GridCell.Tab.1.bottom" timestamp="1604632051517">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state width="1659" height="314" key="GridCell.Tab.1.bottom/0.23.1680.947@0.23.1680.947" timestamp="1600789242103" />
+    <state width="1659" height="314" key="GridCell.Tab.1.bottom/0.23.1680.949@0.23.1680.949" timestamp="1603770471751" />
+    <state width="1659" height="314" key="GridCell.Tab.1.bottom/0.23.1680.952@0.23.1680.952" timestamp="1604632051517" />
+    <state width="1659" height="314" key="GridCell.Tab.1.bottom/0.23.1680.954@0.23.1680.954" timestamp="1603941054948" />
+    <state width="1899" height="326" key="GridCell.Tab.1.bottom/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603719145510" />
+    <state width="1659" height="314" key="GridCell.Tab.1.center" timestamp="1604632051516">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state width="1659" height="314" key="GridCell.Tab.1.center/0.23.1680.947@0.23.1680.947" timestamp="1600789242103" />
+    <state width="1659" height="314" key="GridCell.Tab.1.center/0.23.1680.949@0.23.1680.949" timestamp="1603770471751" />
+    <state width="1659" height="314" key="GridCell.Tab.1.center/0.23.1680.952@0.23.1680.952" timestamp="1604632051516" />
+    <state width="1659" height="314" key="GridCell.Tab.1.center/0.23.1680.954@0.23.1680.954" timestamp="1603941054947" />
+    <state width="1899" height="326" key="GridCell.Tab.1.center/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603719145509" />
+    <state width="1659" height="314" key="GridCell.Tab.1.left" timestamp="1604632051516">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state width="1659" height="314" key="GridCell.Tab.1.left/0.23.1680.947@0.23.1680.947" timestamp="1600789242103" />
+    <state width="1659" height="314" key="GridCell.Tab.1.left/0.23.1680.949@0.23.1680.949" timestamp="1603770471750" />
+    <state width="1659" height="314" key="GridCell.Tab.1.left/0.23.1680.952@0.23.1680.952" timestamp="1604632051516" />
+    <state width="1659" height="314" key="GridCell.Tab.1.left/0.23.1680.954@0.23.1680.954" timestamp="1603941054946" />
+    <state width="1899" height="326" key="GridCell.Tab.1.left/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603719145509" />
+    <state width="1659" height="314" key="GridCell.Tab.1.right" timestamp="1604632051517">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state width="1659" height="314" key="GridCell.Tab.1.right/0.23.1680.947@0.23.1680.947" timestamp="1600789242103" />
+    <state width="1659" height="314" key="GridCell.Tab.1.right/0.23.1680.949@0.23.1680.949" timestamp="1603770471751" />
+    <state width="1659" height="314" key="GridCell.Tab.1.right/0.23.1680.952@0.23.1680.952" timestamp="1604632051517" />
+    <state width="1659" height="314" key="GridCell.Tab.1.right/0.23.1680.954@0.23.1680.954" timestamp="1603941054947" />
+    <state width="1899" height="326" key="GridCell.Tab.1.right/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603719145510" />
+    <state x="469" y="150" key="SettingsEditor" timestamp="1600702487106">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="469" y="150" key="SettingsEditor/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1600702487106" />
+    <state x="638" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601088762177">
+      <screen x="0" y="23" width="1680" height="949" />
+    </state>
+    <state x="638" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.949@0.23.1680.949" timestamp="1601088762177" />
+    <state x="395" y="232" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601084037764">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state x="395" y="232" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1680.952@0.23.1680.952" timestamp="1601084037764" />
+    <state x="667" y="144" width="586" height="735" key="find.popup" timestamp="1603718644630">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="667" y="144" width="586" height="735" key="find.popup/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603718644630" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1603120355911">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603120355911" />
+    <state x="547" y="242" width="670" height="660" key="search.everywhere.popup" timestamp="1604631177410">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state x="547" y="241" width="670" height="656" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1600788552042" />
+    <state x="547" y="241" width="670" height="658" key="search.everywhere.popup/0.23.1680.949@0.23.1680.949" timestamp="1602294866649" />
+    <state x="547" y="242" width="670" height="660" key="search.everywhere.popup/0.23.1680.952@0.23.1680.952" timestamp="1604631177410" />
+    <state x="625" y="248" width="670" height="676" key="search.everywhere.popup/0.23.1920.977/1920.23.1680.1027@0.23.1920.977" timestamp="1603120162166" />
+    <state x="570" y="415" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601084810187">
+      <screen x="0" y="23" width="1680" height="952" />
+    </state>
+    <state x="570" y="415" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1680.952@0.23.1680.952" timestamp="1601084810187" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/6-4.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/7-7.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
