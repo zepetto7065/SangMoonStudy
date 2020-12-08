@@ -15,9 +15,22 @@ vmware를 향하도록 하는 ip를 설정
 #vm 복사/붙여넣기하기 위해 vmTools를 설치 한다
 해당 서버 우클릭 > setting > CD/DVD(sata) > 설치한 파일
 
-
-
 # 도커 설치
 - 공식 홈페이지 참조 
 - centOS 8로 설치하다가 yum package 설치시 뻑이 났음 
 - centOS 7로 설치를 추천
+
+# docker mongo 설치
+- docker pull mongo
+- --name : 컨테이너 이름
+- -v : 볼륨을 외부와 연결 
+- -d : 데몬으로 실행
+- mongo -auth : 보안 접근을 위해 사용
+docker run –-name mongodb_server -v /home/zepetto/mongodb/db:/data/db -d -p 16010:27017 mongo –-auth
+
+#mongo 계정 생성
+- docker exec -it mongodb bash : bash shell 진입
+- 위 명령어에 mongo 까지 입력해야 진입된다.
+
+- use admin
+- db.createUser({ user:'이름', pwd:'비밀번호', roles:['root']})
