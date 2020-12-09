@@ -1,0 +1,36 @@
+#화살표 함수
+- funtion을 무조건 대체 할 순 없다
+const add2 = (x,y) =>{
+    return x+y
+}
+- 바로 return 이 나올 경우 , {}는 생략가능하다. 하지만 헷갈리니까 return 값은 ()로 묶어주기로하자
+- 화살표함수는 부모 this 나의 this는 같은 this 이다. ( 자기만의 this를 써야할떈...일반적 funtion..)
+- this를 필요로 한다면 funtion , 필요없다면...화살표함수
+
+#비구조화 할당
+- this가 있을 경우 , 구조분해를 할당하지 않는다
+
+#클래스 
+- Class는 프로토타입이다.
+- 대문자로 선언한다.
+- 자바와 같이 상속이 가능
+
+#프로미스
+- 내용이 실행은 되었지만 결과가 아직 반환하지 않은 객체
+- Then을 붙이면 결과를 반환
+- 실행이 완료되지 않았으면 완료된 후에 Then 내부 함수가 실행됨.
+- Callback과 다르다 (코드의 분리가 가능)
+ex> const promise = setTimeOutPromise(3000)
+console.log('딴짓');
+
+promise.then(() =>{
+  console.log('지금 실행')  
+})
+
+-Resolve(성공리턴값) -> then으로 연결
+-Reject(실패리턴값) -> catch로 연결
+
+#async/await
+(에이싱크 / 어웨이트)
+- async에서 return은 then으로 받는다.
+
