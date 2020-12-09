@@ -1,10 +1,10 @@
 int형 정수 입력 받기
 input(int())
 
-2개의 변수 띄어서 입력 받기
-map(input().split())
+2개의 정수 띄어서 입력 받기
+map(int, input().split())
 
 3개이상 변수가 나올때? -> list로 받기
-list = list(map(input().split()))
+list = list(map(int, input().split()))
 
 for문은 2가지만 기억
