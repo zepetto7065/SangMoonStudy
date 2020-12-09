@@ -12,22 +12,14 @@ def solution(participant, completion) :
 
 print(solution(participant, completion))
 
-
-#include <string>
-#include <vector>
-#include <algorithm>
-
-# using namespace std;
 #
-# string solution(vector<string> participant, vector<string> completion) {
-#     string answer = "";
-#     sort(participant.begin(), participant.end());
-#     sort(completion.begin(), completion.end());
-#     for(int i=0;i<completion.size();i++)
-#     {
-#         if(participant[i] != completion[i])
-#             return participant[i];
-#     }
-#     return participant[participant.size() - 1];
-#     //return answer;
-# }
+# import collections
+# participant = ["leo", "kiki", "eden","leo"]
+# completion = ["eden","leo" ,"kiki"]
+#
+# def solution(participant, completion):
+#     answer = collections.Counter(participant) - collections.Counter(completion)
+#     print(answer)
+#     return list(answer.keys())[0]
+#
+# print(solution(participant,completion))
