@@ -12,3 +12,44 @@ list = list(map(int, input().split()))
 
 #collections 모듈의 Counter 클래스
 - 세준다 무엇을? 리스트를 
+
+####파이썬 자료형#####
+int 정수
+
+float 실수
+
+complex 복소수
+
+string 문자형 
+-> slicing 가능
+ex) a = "example"
+a[0] > e
+a[-2] > l
+a[1:3] 1번째에서 3번째 > xam
+a[:] 문자열 전체 > example
+a.upper 대문자 > EXAMPLE
+a.lower 소문자 
+a.replace('x','s') 문자 대체 > esample
+a.split() 띄어쓰기로 나눈다 
+
+list 여러 요소를 묶어 하나의 변수로 활용
+a[0]
+a[-1][2]
+a[:2] 2번쨰 요소까지 슬라이스
+
+list 함수
+a.sort()
+a.extend([11,12]) a 리스트에 extend 함수를 합친다
+a.insert(5,6) 5번쨰 자리에 6삽입
+
+tuple - 리스트와 비슷 
+차이는 리스트 [ ] 튜플은 ( )
+리스트는 CUD 가능 , 튜플은 x
+
+dictionary - key , value
+
+집합 ( set )
+s1 = set([1,2,3,4,5])
+-> 합집합 교집합 연산시 사용
+
+집합 함수 update, removeß
