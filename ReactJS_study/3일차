@@ -1,0 +1,12 @@
+# Nodemon
+- node 서버를 재기동하지 않아도 소스의 변화를 감지해서 변화를 반영해주는 tool
+- npm install nodemon --save-dev 
+- dev는 local에서만 사용하겠다라는 뜻
+- package.json에 nodemon index.js 를 추가해주고 실행을 npm run backend 로 실해 ( backend는 설정하기 나름 )
+
+#비밀 설정 정보 관리
+- config/dev.js 생성 후, 보안이 필요한 정보를 저장
+
+#Bcrypt를 이용한 암호화 기능
+- npm install bcrypt --save
+- register router 

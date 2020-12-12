@@ -1,2 +1,7 @@
 #Git
 - 라이브러리는 뺴고 올리자..
+
+#BodyParser&PostMan 회원가입 기능
+- Body-parser > npm install body-parser --save
+- postman 설치
+- Regist Route 생성 (index.js에 )
