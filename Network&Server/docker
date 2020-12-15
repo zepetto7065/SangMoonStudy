@@ -34,3 +34,8 @@ docker run –-name mongodb_server -v /home/zepetto/mongodb/db:/data/db -d -p 16
 
 - use admin
 - db.createUser({ user:'이름', pwd:'비밀번호', roles:['root']})
+
+#스프링 프로젝트 도커 만들기
+- https://imasoftwareengineer.tistory.com/m/40
+- docker 공식 홈페이지와 위 블로그를 통해 따라하면 되지만 
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: ... 도커 파일이 있는데 불구하고 못불러오는 에러가 발생
