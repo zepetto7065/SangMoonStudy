@@ -2,8 +2,9 @@ const mongoose = require('mongoose');
 //bcrypt 사용법은 git 참조
 const bcrypt = require('bcrypt');
 const saltRound = 10; //salt가 몇글자인지
+var jwt = require('jsonwebtoken');
 
-const userShema = mongoose.Schema({
+const userSchema = mongoose.Schema({
 
     name:{
         type:String,
@@ -16,7 +17,7 @@ const userShema = mongoose.Schema({
     },
     password : {
         type: String,
-        maxlength : 50
+        maxlength : 100
     },
     role : {
         type : Number,
@@ -31,7 +32,7 @@ const userShema = mongoose.Schema({
     }
 })
 
-userShema.pre('save' , function(next){
+userSchema.pre('save' , function(next){
 
     var user = this; 
 
@@ -46,10 +47,57 @@ userShema.pre('save' , function(next){
             })
         })    
 
+    }else{
+        next()
     }
 
 });
 
-const User = mongoose.model('User', userShema)
+userSchema.methods.comparePassword = function(plainPassword, cb){
+    //plainPassword 1234567 암호화된 비밀번호   $2b$10$Eid6YUjC3eO9iUqZwT//p.7zhjQgX5Dgy6uuXrdCBexVbOR/5X8BK 같은지 체크
+    bcrypt.compare(plainPassword, this.password, function(err, isMatch){
+        if(err){
+            return cb(err)
+        } 
+        else{
+            cb(null, isMatch)
+        }
+            
+    })
+    
+}
+
+userSchema.methods.generateToken = function(cb){
+    
+    var user = this;
+    //jsonWebToken 이용해서 token을 생성하기
+    var token = jwt.sign(user._id.toHexString(), 'secretToken');
+
+    // user._id + 'secretToken' = token
+    user.token = token
+    user.save(function(err, user){
+        if(err) return cb(err)
+        cb(null, user)
+    })
+}
+
+userSchema.static.findByToken = function(token, cb){
+    var user = this;
+    
+    //토큰을 decode 한다.
+    jwt.verify(token, 'secretToken', function(err, decoded){
+        //유저 아이디를 이용해서 유저를 찾은 다음에 
+        //클라이언트에서 가져온 token과 db에 보관된 토큰이 일치하는지 확인
+        user.findOne({"_id" : decoded , "token" : token} , function(err, user){
+            if(err){
+                return cb(err);
+            }else{
+                cb(null, user); 
+            }
+        })
+    })
+}
+
+const User = mongoose.model('User', userSchema)
 module.exports = {User} //다른 곳에도 쓸 수 있도록
 

@@ -1,0 +1,12 @@
+# 로그인 기능 with Bcrypt
+- login route 만들기
+- JSONWEBTOKEN을 이용한 토큰 생성 > npm install jsonwebtoken --save > 사이트 참조 : https://www.npmjs.com/package/jsonwebtoken
+- cookie 에 토큰을 저장하기 위해 cookie parser을 깔아주자  > npm install cookie-parser --save
+
+# Auth 기능 만들기
+- auth route 생성 -> 일반 유저와 관리자를 분리, 글을 쓸떄 권한 분리를 위해서
+
+# 로그아웃 기능 만들기
+- DB에 로그아웃 대상을 찾은 후 , 토큰을 지워 준다.
+- 왜? 클라이언트 쿠키 토큰과 같이 않고 인증이 안되기 떄문에 로그인 기능이 풀리기 떄문이다.
+
