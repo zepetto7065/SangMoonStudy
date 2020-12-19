@@ -1,0 +1,17 @@
+# MongoDB 정리
+- NoSQL ( Not Only SQL)의 대표적 케이스
+- 유연하고 빠르다. 세션관리, 로그 관리 등에 탁월
+- Join이 없고 테이블, 컬럼, 로우는 컬렉션, 다큐멘트, 필드로 대체 된다.
+- 서로 다른 특징을 가지고 있기 때문에 다른 목적으로 사용하면 된다.
+- 대표적인 DB Tool은 NoSQLBooster, Compass
+
+#설치
+- MAC에서의 설치는 Homebrew를 이용하여 설치
+
+#명령어
+- user admin > admin 계정으로 변경
+- db.createUser({ user : 'zepetto' , pwd : '1234' , roles : ['root']}) > zepetto 계정의 1234라는 비번을 가지고, root 권한을 주는 계정 생성
+- db > 현재 사용하는 데이터베이스 이름 조회
+- use [데이터베아스명] > 데이터베이스를 생성
+- show dbs > DB 내역을 보여준다.
+- show collection > collection 내역 조회
