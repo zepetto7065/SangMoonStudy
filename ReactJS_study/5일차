@@ -1,0 +1,17 @@
+#ReactJS란?
+- 2013년도에 발표된 컴포넌츠로 이루어진 라이브러리 
+- 기능별로 유연하게 컴포넌트화가 가능하다 ( 한파일별로 나누어서 )
+- virtual DOM 존재 > Real DOM과 달리 10개의 리스트 중 한개만 update 될떄
+> 전부다 로드 시킬 필요없이(RealDOM) 하나만 가져올 수 있다. (부하가 적다)
+
+# Create React App
+- 예전에는.. webpack 이나 babel 설정이 오래 결렸으나.. create-react-app 커맨드로 바로 시작 가능하다
+- babel 은  최신 자바스크립트 문법을 구형 브라우저에도 돌수있게 변환 시켜줌
+- webpack 은 복잡하게 엮인 문서들을 번들화 시켜준다.
+- client 폴더 하나 만들고 
+- npx create-react-app . 
+- 설치 진행하다, 에러가 날 경우
+sudo rm -rf $(xcode -print-path)
+xcode-select --install
+( 사실 큰 무리는 없다고 한다.)
+- NPM vs NPX > npx..
