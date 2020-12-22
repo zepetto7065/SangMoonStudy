@@ -15,3 +15,6 @@
 - use [데이터베아스명] > 데이터베이스를 생성
 - show dbs > DB 내역을 보여준다.
 - show collection > collection 내역 조회
+
+- brew services start mongodb-communit > Mongo 서비스 스타트
+- mongo > shell 접속

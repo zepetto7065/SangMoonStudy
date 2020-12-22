@@ -1,0 +1,19 @@
+# NPM NPX
+- NPM ( Node Package Manager) > 레지스트리 ( 저장소 ) 역할을 하며, -g가 없을시 로컬로 다운 받아지며 node_modules안에 저장된다. 글로벌은 %AppData%/npm 안에 저장된다.
+
+# 구조설명 (React)
+- 처음 페이지는App.js 에 렌더링된 것 
+- App의 컴포넌트는 index.js에 들어간것 , 컴포넌트 기준으로 분리하여 보여준다.
+- webpack이 관리하는 곳은 src > 이미지, js , css는 src 폴더 안에 넣는다.
+
+- 구조는 자유에 의한다.
+- App.js Routing 관련 일을 처리한다
+- Config.js 환경 변수를 정하는 곳
+- hoc higherOrderComponent > 여러 컴포넌트를 넣어 넣고 조건에 따라 액션을 취해 컴포넌트를 제공(ex Authentication)
+- utils > 여러 군데에서 쓰일 수 있는 유틸 모음
+
+- vsCode Extention 에서 'es7' 검색후 , 인스톨 > 자동완성 기능이 된다. (ex rfce >  기본 함수 구조 )
+
+# React Router Dom
+
+- npm install react-router-dom --save
