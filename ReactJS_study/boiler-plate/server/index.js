@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 5000
 const{User} = require('./models/User');
 const{auth} = require('./middleware/auth');
 
@@ -90,8 +89,11 @@ app.get('/api/users/logout', auth, (req, res) => {
       return res.status(200).send({success : true})
     })
 })
+const port = 5000
 
-
+app.get('/api/hello',(req,res)=>{ 
+  res.send("안녕하세요~")
+})
 
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

@@ -1,0 +1,33 @@
+# 데이터 Flow & Axios
+- 우선 저번에 정리한 부분 > routing > 어떤 네트워크 안에서 통신 데이터를 보낼 때 최적의 경로를 선택하는 과정
+- Axios
+- npm install axios --save
+- 하지만 이렇게 Request 날리면 Error > CORS 이슈 > Proxy 설정 필요
+
+# CORS 이슈에 따른 Proxy 설정
+- port 가 다를 떄, CORS 정책 (Cross-Origin Resource Sharing)에 의해 Request 불가
+> 해결하기 위해서는 개발자 도구를 이용하거나 ( 제한적 ),  JSONP를 이용하여 모든 Request를 get으로 바꾸던지 , Proxy 사용
+> proxy > https://create-react-app.dev/docs/proxying-api-requests-in-development
+> Configuring the Proxy Manually > 임의로 프록시 설정 가능
+> npm install http-proxy-middleware --save
+> 다운을 받은 후, src/setupProxy.js 생성
+
+# What is Proxy?
+1. 아이피를 임의로 바꿀수 있다.
+2. 보내는 데이터도 임의로 바꿀수 있다.
+사용이유?
+> 직원들, 아이들 인터넷 사용 제어 
+> 캐쉬를 이용해서 더 빠른 인터넷 이용
+> 더 나은 보안 제공
+> 이용 제한된 사이트 접근 
+
+#Concurrently 
+- back , client server 한번에 키기
+- npm install concurrently --save ( 정확한건 라이브러리 찾아보기 )
+
+# Antd CSS Framework
+- 대표적인 것들이 많지만.. Ant Design를 많이 쓴다 . 중국에서 만들었다고 함.
+- 쓰기가 편함
+- https://ant.design/
+- client단에 > npm install client antd --save
+- 
