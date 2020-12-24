@@ -6,11 +6,12 @@ function LandingPage(){
 
     useEffect(() => {
         axios.get('/api/hello')
-        .then(response => console.log(response.data))
+        .then(response => console.log(response))
     }, [])
 
     return (
-        <div>
+        <div style={{display:'flex', justifyContent:'center', alignItems:'center'
+        , width : '100%', height: '100vh'}}>
             LandingPage 입니다.
         </div>
     )

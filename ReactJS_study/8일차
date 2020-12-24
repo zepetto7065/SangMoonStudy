@@ -1,0 +1,27 @@
+#Redux 기초
+- Redux > 상태관리 라이브러리
+- State (상태) vs Props
+Props > Properties의 준말, 컨포넌트간에 주고 받을 때 이용
+State > 부모 컨포넌트에서 자식 컨포넌트를 주는것이 아니라, Prop와 달리 각자 안에서 data가 변경 될수 있다.
+- Redux가 있다면 상위 컨포넌트에 갈 필요 없이 (타고 올라 갈 필요 없이) 직접 Store(저장소)에 접근 가능하면서 훨씬 빠르게 상태 관리 가능하다.
+
+- Redux 데이터 Flow
+Action -> Reducer -> Store -> React Component -> Action
+Action > 무엇이 일어났는지 설명하는 객체
+Reducer > Action을 함으로 인해, '3이었던 State가 4로 변했다'라고 설명해주는 곳
+Store > Application에 State을 전체적으로 감싸주는 역할, 여러가지 메서드를 이용하여 State관리 가능
+
+# Redux Up
+- 다운받아야할 Dependency들
+1. redex
+2. react-Redux
+3. react-promise
+4. react-thunk
+npm install redux react-redux redux-promise redux-thunk --save
+
+- 우선 Redux라는 미들웨어는 Store을 관리함에 도움을 준다. Store에서는 객체 형태로 받는다.
+- 여기서 Promise, Funtion의 형태로 오는 데이터를 받는 방법을 알려주는 것이 react-promise, react-thunk이다. > 잘 사용하게 끔 도움을 주는 미들웨어
+ 
+
+- Redux 기본 구조 만들기
+- 기능에 따라 Reducer 생성
