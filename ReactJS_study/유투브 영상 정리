@@ -1,0 +1,15 @@
+
+#Three Tier Architecture
+
+Presentation layer - MVC
+BusinessLogic layer - 
+Data Access layer
+
+# spring 프로젝트 생성
+Spring Web
+Spring Data JPA
+mysql driver
+spring boot driver
+
+ver 2.3.1
+jdk 8
