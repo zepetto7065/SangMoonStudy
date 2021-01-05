@@ -1,0 +1,8 @@
+##ReactJS_study
+/ReactJS_study/boiler-plate/server/node_modules/
+/ReactJS_study/boiler-plate/server/config
+/ReactJS_study/boiler-plate/client/node_modules/
+/ReactJS_study/boiler-plate/client/public/
+
+/ReactJS_study/boiler-plate/client/.gitignore
+/ReactJS_study/boiler-plate/node_modules

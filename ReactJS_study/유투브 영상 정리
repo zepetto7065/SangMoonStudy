@@ -9,7 +9,13 @@ Data Access layer
 Spring Web
 Spring Data JPA
 mysql driver
-spring boot driver
+spring boot devtools
 
 ver 2.3.1
 jdk 8
+
+# npx create-react-app 프로젝트명
+
+# snnipet 설치 후, rcc
+
+# npm install react-router-dom 

@@ -1,0 +1,30 @@
+#참고 블로그
+https://victorydntmd.tistory.com/74?category=682764
+
+#용어 정리
+Git 이란?
+-> 버전관리를 위한 프로그램 Version Control System
+
+영역?
+-> 깃에는 세가지 영역이 존재
+-> working directory : 현재 작업 공간, 추적(track)하지 않은 상태
+-> index : stage 또는 staging area 준비 공간, 추적을 시작했으며 버전 등록 전
+-> repository : 저장소를 의마한다.
+
+Flow?
+git init : .git 폴더를 생성
+git add : working directory에서 변경된 파일을 staging area에 추가
+git commit : staging area의 내용을 local repository에 확정
+git push : local repository 내용을 remote repository로 업로드
+git pull : local repository 내용을 remote repository 에서 가져온다
+git clone : .git 포함한 remote repository의 파일들을 local repository에 복사합니다. 
+
+병합?
+git branch : 독립적인 working directory
+head : 포인터를 의미하며, 지금 작업하는 branch 를 가르킴
+merge : 2개의 브랜치에서 작업한 다른 내용을 하나로 합치는 것 
+
+git reset vs git revert
+git reset 은 특정 커밋으로 돌아가지만 , 되돌린 버전 이후의 버전들은 히스토리에서 삭제
+git revert 는 reset 처럼 특정 버전으로 되돌아가지만 , 이력은 그대로 유지
+
