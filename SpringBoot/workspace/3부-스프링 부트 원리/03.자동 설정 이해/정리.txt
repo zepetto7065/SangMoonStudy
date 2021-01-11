@@ -1,0 +1,19 @@
+# 자동 설정 이해
+
+@SpringBootConfiguration
+- 사실상 Configuration
+
+@ComponentScan
+- @ComponentScan 은 Component라는 어노테이션 ( @Repository, @Controller, @Service 등 ) 을 가진 클래스들을 Bean 으로 등록한다.
+- @Configuration을 붙이면 그 자신도 Bean이 된다.
+
+@EnableAutoConfiguration
+- 사실상 Bean을 두번 등록하는데 ComponentScan 과 EnableAutoConfiguration, 두단계로 나누어 등록
+- ComponentScan으로 Bean을 등록한 후, 추가적으로 EnableAutoConfiguration 등록하여 나머지 빈을 등록
+- Spring Meta File 안에 Spring.factories
+- spring-boot-autoconfigure 프로젝트 안에 META-INF, spring.factories
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+키 값 및 다른 AutoConfiguration 존재
+- 위 해당 클래스에는  @Configuration을 가지고 있으며 , @Conditional... 조건에 따라 등록하는 경우들이 있음.
+===> 즉 EnableAutoConfigration 하나로 조건에 따라 수많은 빈들이 생성된다.
+

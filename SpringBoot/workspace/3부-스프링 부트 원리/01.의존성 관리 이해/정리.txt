@@ -1,0 +1,17 @@
+# 의존성 관리 이해
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-dependency-management
+
+- pom.xml 에 Spring-boot-starter-parent가 부모이고 또 spring-boot-dependencies가 부모로 있다.
+- 최상위에 버전이 적혀있다.
+- pom.xml에 의존성에 버전이 없더라도 spring-boot-dependencies에 정의된 버전을 가져온다.
+- itellij Maven 탭에서 의존성 구조를 트리로 볼수 있다.
+- 이 기능이 좋은 점? 관리해야할 의존성의 수가 줄어든다. 즉, 우리의 일이 그만큼 줄어든다.
+- 하지만 pom.xml에서 관리하지않는다면 버전을 명시해야한다.
+
+- 또 다른 커스텀 상속 구조를 가질 수 있다. dependencyManagement 사용
+- 단점은..parent 에는 dependencies만 있는 것이 아니고, 그 밖에 다른 설정들을 가져올 수 없다. (ex-java, encoding..)
+
+- resource 관리도 가능.
+
+- parent 사용하는 것을 추천 , 기본적을 resource encoding 등 부수적인 기능 setting을 해준다.
+- 만약의 커스텀한 계층 구조가 있다면 부모의 부모 구조로 만들어서 기능을 참조하도록 하자.

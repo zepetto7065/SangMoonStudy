@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="337d4ea3-a721-4ad6-9892-7dc5a3f26104" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1muGmpS7Ji6kMep8ocChs4eOmUi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="337d4ea3-a721-4ad6-9892-7dc5a3f26104" name="Default Changelist" comment="" />
+      <created>1610336223920</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610336223920</updated>
+      <workItem from="1610336228036" duration="47000" />
+      <workItem from="1610336310955" duration="612000" />
+      <workItem from="1610336947547" duration="90000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3303" y="703" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1610336822426">
+      <screen x="2560" y="493" width="1920" height="1030" />
+    </state>
+    <state x="3303" y="703" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/2560.493.1920.1030/0.0.2048.1112@2560.493.1920.1030" timestamp="1610336822426" />
+    <state x="3292" y="767" key="FileChooserDialogImpl" timestamp="1610337020170">
+      <screen x="2560" y="493" width="1920" height="1030" />
+    </state>
+    <state x="3292" y="767" key="FileChooserDialogImpl/2560.493.1920.1030/0.0.2048.1112@2560.493.1920.1030" timestamp="1610337020170" />
+    <state x="3000" y="587" key="SettingsEditor" timestamp="1610336680458">
+      <screen x="2560" y="493" width="1920" height="1030" />
+    </state>
+    <state x="3000" y="587" key="SettingsEditor/2560.493.1920.1030/0.0.2048.1112@2560.493.1920.1030" timestamp="1610336680458" />
+    <state x="3111" y="673" width="802" height="679" key="new project wizard" timestamp="1610337034744">
+      <screen x="2560" y="493" width="1920" height="1030" />
+    </state>
+    <state x="3111" y="673" width="802" height="679" key="new project wizard/2560.493.1920.1030/0.0.2048.1112@2560.493.1920.1030" timestamp="1610337034744" />
+    <state x="3183" y="718" width="672" height="678" key="search.everywhere.popup" timestamp="1610336885328">
+      <screen x="2560" y="493" width="1920" height="1030" />
+    </state>
+    <state x="3183" y="718" width="672" height="678" key="search.everywhere.popup/2560.493.1920.1030/0.0.2048.1112@2560.493.1920.1030" timestamp="1610336885328" />
+  </component>
+</project>

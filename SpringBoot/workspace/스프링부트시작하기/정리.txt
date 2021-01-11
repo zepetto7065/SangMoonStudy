@@ -1,0 +1,8 @@
+#스프링 부트 시작하기
+https://docs.spring.io/spring-boot/docs/2.0.3.RELEASE/reference/htmlsingle/#getting-started-maven-installation
+
+- create new project -> Maven -> 
+group id 는 보통 패키지 명
+
+- @EnableAutoConfiguration 으로 스프링 웹을 run 할 수 있다.
+- 자세한건 3부 스프링 부트 원리

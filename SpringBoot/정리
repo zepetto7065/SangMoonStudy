@@ -1,0 +1,10 @@
+#스프링 부트 소개
+https://docs.spring.io/spring-boot/docs/2.0.3.RELEASE/reference/htmlsingle/#getting-started-introducing-spring-boot
+
+- 스프링 부트는 제품 수준의 스프링 기반 애플리케이션을 만들어준다.
+- 기본 제공 설정을 알아서 해준다. ( ex-서드파티( 톰캣 ) )
+- 하지만 이러한 제공된 설정을 원하는대로 바꿀 수 있다는 점이 강력하다.
+- xml설정 및 코드 제너레이션을 하지 않는다.
+- 스프링 부트는 자바 8 이상 부터 지원
+
+
