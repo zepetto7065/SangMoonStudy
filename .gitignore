@@ -6,3 +6,5 @@
 
 /ReactJS_study/boiler-plate/client/.gitignore
 /ReactJS_study/boiler-plate/node_modules
+
+.vscode
