@@ -1,0 +1,16 @@
+https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-spring-application.html#boot-features-spring-application
+
+-기본 로그 레벨 INFO
+    뒤에 로깅 수업때 자세히 살펴볼 예정
+    실행하는 옵션에서 VMoption -Ddebug 로 설정하면 , debug 모드로 실행이 된다.
+-FailureAnalyzer
+    에러를 조금 더 이쁘게 보여주는 기능
+    banner.txt 파일 만들어서 로그 커스터 마이징 가능하다.
+    일부는 MANIFAST 파일이 생성이 되어야만 찍히는 것들이 있다.
+-배너
+    banner.txt | gif | jpg | png
+    classpath 또는 spring.banner.location
+    ${spring-boot.version} 등의 변수를 사용할 수 있음.
+    Banner 클래스 구현하고 SpringApplication.setBanner()로 설정 가능.
+    배너 끄는 방법
+-SpringApplicationBuilder로 빌더 패턴 사용 가능
