@@ -1,0 +1,14 @@
+# 내장 웹 서버 응용 1부 : 컨테이너와 포트
+
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/howto-embedded-web-servers.html
+
+-다른 서블릿 컨테이너로 변경
+-웹 서버 사용 하지 않기
+<exclusion> 태그를 이용하여 spring-boot-starter-web 에 존재하는 내장 톰캣을 제외시킬 수 있다.
+또한 원하는 웹서버를 추가하여 사용 가능하다.
+
+-포트
+    server.port -> application.properties에 포트 설정 가능
+    랜덤 포트 -> server.port에 0 , 사용할 수 있는 포트를 찾아준다.
+    ApplicationListner<ServletWebServerInitializedEvent> -> random 으로 띄운 포트를 
