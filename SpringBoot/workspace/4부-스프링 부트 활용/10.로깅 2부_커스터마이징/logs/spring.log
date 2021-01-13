@@ -1,0 +1,36 @@
+2021-01-13 14:57:32.264  INFO 19948 --- [main] me.zepetto.ApplicationInit               : Starting ApplicationInit on VS-D40-708 with PID 19948 (started by UBIVELOX in D:\00.private\02.GIT\study\SpringBoot\workspace\4부-스프링 부트 활용\09.로깅 1부_스프링 부트 기본 로거 설정)
+2021-01-13 14:57:32.268 DEBUG 19948 --- [main] me.zepetto.ApplicationInit               : Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2021-01-13 14:57:32.269  INFO 19948 --- [main] me.zepetto.ApplicationInit               : The following profiles are active: test
+2021-01-13 14:57:32.315  INFO 19948 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2bbf180e: startup date [Wed Jan 13 14:57:32 KST 2021]; root of context hierarchy
+2021-01-13 14:57:33.339  INFO 19948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-01-13 14:57:33.352  INFO 19948 --- [main] me.zepetto.ApplicationInit               : Started ApplicationInit in 1.475 seconds (JVM running for 2.948)
+2021-01-13 14:57:33.354  INFO 19948 --- [main] me.zepetto.SpringRunner                  : ========================
+2021-01-13 14:57:33.354  INFO 19948 --- [main] me.zepetto.SpringRunner                  : test hello
+2021-01-13 14:57:33.364  INFO 19948 --- [main] me.zepetto.SpringRunner                  : sangmoon test
+2021-01-13 14:57:33.364  INFO 19948 --- [main] me.zepetto.SpringRunner                  : ========================
+2021-01-13 14:57:33.366  INFO 19948 --- [Thread-4] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2bbf180e: startup date [Wed Jan 13 14:57:32 KST 2021]; root of context hierarchy
+2021-01-13 14:57:33.369  INFO 19948 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-01-13 15:03:56.665  INFO 6704 --- [main] me.zepetto.ApplicationInit               : Starting ApplicationInit on VS-D40-708 with PID 6704 (started by UBIVELOX in D:\00.private\02.GIT\study\SpringBoot\workspace\4부-스프링 부트 활용\10.로깅 2부_커스터마이징)
+2021-01-13 15:03:56.671 DEBUG 6704 --- [main] me.zepetto.ApplicationInit               : Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2021-01-13 15:03:56.672  INFO 6704 --- [main] me.zepetto.ApplicationInit               : The following profiles are active: test
+2021-01-13 15:03:56.723  INFO 6704 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@71b1176b: startup date [Wed Jan 13 15:03:56 KST 2021]; root of context hierarchy
+2021-01-13 15:03:58.012  INFO 6704 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-01-13 15:03:58.027  INFO 6704 --- [main] me.zepetto.ApplicationInit               : Started ApplicationInit in 1.83 seconds (JVM running for 3.457)
+2021-01-13 15:03:58.029 DEBUG 6704 --- [main] me.zepetto.SpringRunner                  : ========================
+2021-01-13 15:03:58.030 DEBUG 6704 --- [main] me.zepetto.SpringRunner                  : test hello
+2021-01-13 15:03:58.042 DEBUG 6704 --- [main] me.zepetto.SpringRunner                  : sangmoon test
+2021-01-13 15:03:58.043 DEBUG 6704 --- [main] me.zepetto.SpringRunner                  : ========================
+2021-01-13 15:03:58.045  INFO 6704 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@71b1176b: startup date [Wed Jan 13 15:03:56 KST 2021]; root of context hierarchy
+2021-01-13 15:03:58.047  INFO 6704 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-01-13 15:22:25.375  INFO 15796 --- [main] m.z.ApplicationInit                      : Starting ApplicationInit on VS-D40-708 with PID 15796 (started by UBIVELOX in D:\00.private\02.GIT\study\SpringBoot\workspace\4부-스프링 부트 활용\10.로깅 2부_커스터마이징)
+2021-01-13 15:22:25.381 DEBUG 15796 --- [main] m.z.ApplicationInit                      : Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2021-01-13 15:22:25.382  INFO 15796 --- [main] m.z.ApplicationInit                      : The following profiles are active: test
+2021-01-13 15:22:25.471  INFO 15796 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@38102d01: startup date [Wed Jan 13 15:22:25 KST 2021]; root of context hierarchy
+2021-01-13 15:22:26.540  INFO 15796 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-01-13 15:22:26.553  INFO 15796 --- [main] m.z.ApplicationInit                      : Started ApplicationInit in 1.72 seconds (JVM running for 3.413)
+2021-01-13 15:22:26.554 DEBUG 15796 --- [main] m.z.SpringRunner                         : ========================
+2021-01-13 15:22:26.555 DEBUG 15796 --- [main] m.z.SpringRunner                         : test hello
+2021-01-13 15:22:26.564 DEBUG 15796 --- [main] m.z.SpringRunner                         : sangmoon test
+2021-01-13 15:22:26.565 DEBUG 15796 --- [main] m.z.SpringRunner                         : ========================
+2021-01-13 15:22:26.566  INFO 15796 --- [Thread-5] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@38102d01: startup date [Wed Jan 13 15:22:25 KST 2021]; root of context hierarchy
+2021-01-13 15:22:26.568  INFO 15796 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
