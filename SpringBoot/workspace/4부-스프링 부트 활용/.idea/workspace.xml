@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bf199d8e-4735-4c52-bd10-caaf46a22a7d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/02.SpringApplication 1부/src/main/java/me/zepetto/SpringInitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/02.SpringApplication 1부/src/main/java/me/zepetto/SpringInitApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.SpringApplication 2부/src/main/java/me/zepetto/SpringInitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/03.SpringApplication 2부/src/main/java/me/zepetto/SpringInitApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.외부 설정 1부/src/main/java/me/zepetto/SpringInitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/04.외부 설정 1부/src/main/java/me/zepetto/SpringInitApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.외부 설정 1부/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/04.외부 설정 1부/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.외부 설정 1부/src/test/java/me/zepetto/SpringInitApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/04.외부 설정 1부/src/test/java/me/zepetto/SpringInitApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.외부 설정 1부/src/test/resources/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/04.외부 설정 1부/src/test/resources/test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06.외부 설정 2부(1)/src/main/java/me/zepetto/SpringInitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/06.외부 설정 2부(1)/src/main/java/me/zepetto/SpringInitApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06.외부 설정 2부(1)/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/06.외부 설정 2부(1)/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06.외부 설정 2부(1)/src/test/java/me/zepetto/SpringInitApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/06.외부 설정 2부(1)/src/test/java/me/zepetto/SpringInitApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06.외부 설정 2부(1)/src/test/resources/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/06.외부 설정 2부(1)/src/test/resources/test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07.외부 설정 2부(2)/src/main/java/me/zepetto/SangmoonProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/07.외부 설정 2부(2)/src/main/java/me/zepetto/SangmoonProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07.외부 설정 2부(2)/src/main/java/me/zepetto/SpringInitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/07.외부 설정 2부(2)/src/main/java/me/zepetto/SpringInitApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07.외부 설정 2부(2)/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/07.외부 설정 2부(2)/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07.외부 설정 2부(2)/src/test/java/me/zepetto/SpringInitApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/07.외부 설정 2부(2)/src/test/java/me/zepetto/SpringInitApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07.외부 설정 2부(2)/src/test/resources/test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/07.외부 설정 2부(2)/src/test/resources/test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08.프로파일/src/main/java/me/zepetto/ApplicationInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/08.프로파일/src/main/java/me/zepetto/ApplicationInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08.프로파일/src/main/java/me/zepetto/config/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/08.프로파일/src/main/java/me/zepetto/config/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08.프로파일/src/main/java/me/zepetto/config/TestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/08.프로파일/src/main/java/me/zepetto/config/TestConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08.프로파일/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/08.프로파일/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08.프로파일/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/08.프로파일/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08.프로파일/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/08.프로파일/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/java/me/zepetto/ApplicationInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/java/me/zepetto/ApplicationInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/java/me/zepetto/config/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/java/me/zepetto/config/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/java/me/zepetto/config/TestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/java/me/zepetto/config/TestConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/09.로깅 1부_스프링 부트 기본 로거 설정/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/java/me/zepetto/ApplicationInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/java/me/zepetto/ApplicationInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/java/me/zepetto/config/BaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/java/me/zepetto/config/BaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/java/me/zepetto/config/TestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/java/me/zepetto/config/TestConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/10.로깅 2부_커스터마이징/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.테스트/src/main/java/me/zepetto/springtestdemo/sample/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/11.테스트/src/main/java/me/zepetto/springtestdemo/sample/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.테스트/src/test/java/me/zepetto/springtestdemo/SpringtestdemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/11.테스트/src/test/java/me/zepetto/springtestdemo/SpringtestdemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.테스트/src/test/java/me/zepetto/springtestdemo/sample/SampleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/11.테스트/src/test/java/me/zepetto/springtestdemo/sample/SampleControllerTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1n0TzFY4pmUdYwECCu8H59c92eW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/12.Spring-Boot-Devtools/pom.xml" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf199d8e-4735-4c52-bd10-caaf46a22a7d" name="Default Changelist" comment="" />
+      <created>1610526268881</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610526268881</updated>
+      <workItem from="1610526279366" duration="10000" />
+      <workItem from="1610526308198" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1610526330888">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="805" y="311" key="FileChooserDialogImpl/2560.493.1920.1030/0.0.2048.1112@0.0.2048.1112" timestamp="1610526330888" />
+    <state x="221" y="183" key="FileDocumentManager.FileCacheConflict" timestamp="1610526284814">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="221" y="183" key="FileDocumentManager.FileCacheConflict/2560.493.1920.1030/0.0.2048.1112@0.0.2048.1112" timestamp="1610526284814" />
+  </component>
+</project>

@@ -18,3 +18,9 @@
     @WebFluxTest
     @DataJpaTest
     ...
+
+엇? 스프링 부트 테스트 끝난줄 알았는데...
+    OutputCapture (*****)
+    TestPropertyValues
+    TestRestTemplate
+    ConfigFileApplicationContextInitializer

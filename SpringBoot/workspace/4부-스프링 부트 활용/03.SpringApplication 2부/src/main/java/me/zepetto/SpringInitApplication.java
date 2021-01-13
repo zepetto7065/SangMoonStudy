@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringInitApplication {
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         SpringApplication app = new SpringApplication(SpringInitApplication.class);
         app.setWebApplicationType(WebApplicationType.NONE);
         //WebApplication 타입을 설정 가능. 기본적으로 Servlet, WebPlux-Reactive ,둘다 들어있다면 첫번째 Servlet

@@ -19,7 +19,7 @@ public class SangmoonProperties {
     @NotEmpty //JSR-303
     private String name;
 
-    @Size(min=1, max=10)
+    @Size(min = 1, max = 10)
     private int age;
 
     private String fullName;

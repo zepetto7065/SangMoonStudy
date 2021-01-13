@@ -20,7 +20,7 @@ public class SpringInitApplicationTests {
     Environment environment;
 
     @Test
-    public void contextLoads(){
+    public void contextLoads() {
         assertThat(environment.getProperty("sangmoon.fullName"))
                 .isEqualTo("sangmoon2 Yoo");
     }
