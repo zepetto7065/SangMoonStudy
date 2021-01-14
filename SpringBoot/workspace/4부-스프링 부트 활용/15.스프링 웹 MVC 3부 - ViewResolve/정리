@@ -1,0 +1,17 @@
+경우에 따라 accept header를 제공하지 않을수 있다.
+format 이라는 파라미터로 알려줄수 있다
+
+HttpMediaTypeNotAcceptableException -> http recept convertor가 없다.
+
+스프링 부트
+    뷰 리졸버 설정 제공
+    HttpMessageConvertersAutoConfiguration
+
+XML 메시지 컨버터 추가하기
+    <dependency>
+       <groupId>com.fasterxml.jackson.dataformat</groupId>
+       <artifactId>jackson-dataformat-xml</artifactId>
+       <version>2.9.6</version>
+    </dependency>
+
+하지만 주로 JSON을 사용한다
