@@ -1,0 +1,20 @@
+WSL?
+Linux용 Windows 하위 시스템을 사용하면 개발자가 기존 가상 머신의 오버헤드 또는 듀얼 부팅 설정 없이 대부분의 명령줄 도구, 유틸리티 및 애플리케이션을 비롯한 GNU/Linux 환경을 수정하지 않고 Window...
+
+-> 쉽게 말해 window 환경에서 쉽게 linux 환경을 사용할 수 있다!! ( VM 아님 )
+
+1. powershell 관리자 권한 접속
+
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+2. Microsoft Store 에서 터미널 설치
+설치하고 default version을 2로 설정해주자
+>wsl --set-default-version 2 
+>wsl --set-version Ubuntu 2
+
+2. Microsoft Store 에서 Ubuntu 설치
+
+
+
+WSL용 Docker 설치 -> https://docs.docker.com/docker-for-windows/wsl/#download
