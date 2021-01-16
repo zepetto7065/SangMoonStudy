@@ -30,3 +30,15 @@ VMware 설치 및 우분투 환경 설정 (2020/11/30)
 
 
 
+#포트포워딩
+- 인바운드 아웃바운드 방화벽 확인
+CentOS7 포트 열기
+firewall-cmd --zone=public --permanent --add-port=2888/tcp
+firewall-cmd --reload
+https://kwangsics.tistory.com/entry/CentOS-CentOS-7-포트-열기-및-확인
+
+- 방화벽 해제
+systemctl stop firewalld
+- 리부팅시 방화벽 실행 하지 않게 하기
+systemctl disable firewalld
+출처: https://blog.miyam.net/49 [낭만 프로그래머]
