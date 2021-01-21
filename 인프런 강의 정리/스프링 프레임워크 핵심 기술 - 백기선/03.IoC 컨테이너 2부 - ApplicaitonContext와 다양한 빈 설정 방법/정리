@@ -1,0 +1,15 @@
+application.xml 에 빈 등록을 해줄 수 있다. -> 옛날 방법
+xml에 property name은 setter에서 가져온다.
+ref에는 다른 bean의 id값이 와야한다.
+
+위와 같은 방법은 일일이 bean등록으로 번거롭다. -> 그래서 component-scan 등장 (스프링2.5부터)
+기본적으로 @Component로 @Bean scan이 가능하다.
+bean등록을 해주고 Autowired 설정을 함으로써 빈등록을 해주자
+
+그 이후 -> @Configuration ( 자바 설정 파일 )
+
+그 이후 -> @ComponentScan(basePackages = "") 보다 @ComponentScan(basePackageClasses = "")
+가 조금더 타입세잎하다. Application 위치한 곳부터 컴포넌트 스캐닝을 해라
+
+물론 이 모든게 @SpringBootApplication으로 해결된다.
+@SpringBootApplication 안에 Configuration 이 있기때문에 그 자체 파일이 설정 파일이 된다.
