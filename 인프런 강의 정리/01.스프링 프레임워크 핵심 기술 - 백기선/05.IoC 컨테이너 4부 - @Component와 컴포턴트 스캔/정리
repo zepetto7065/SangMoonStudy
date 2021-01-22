@@ -1,0 +1,35 @@
+6. IoC 컨테이너 4부: @Component와 컴포넌트 스캔
+
+
+
+컨포넌트 스캔 주요 기능
+    ● 스캔 위치 설정
+    - application이 컴포넌트 스캔을 가지고 있고 어노테이션이 붙어있는곳부터 스캔 시작
+
+    ● 필터: 어떤 애노테이션을 스캔 할지 또는 하지 않을지
+    - component 스캔을 한다고 해서 모든 빈을 등록해주는 것이 아니라 filter에 의해 걸러지기도 한다.
+
+@Component
+    이 어노테이션을 가지고 있어야 Bean으로 등록이 된다.
+    ● @Repository
+    ● @Service
+    ● @Controller
+    ● @Configuration
+동작 원리
+    ● @ComponentScan은 스캔할 패키지와 애노테이션에 대한 정보
+    ● 실제 스캐닝은 ConfigurationClassPostProcessor라는 BeanFactoryPostProcessor에
+의해 처리 됨.
+
+@ComponentScan의 구동시간이 오래 걸려서 생긴 새로운 기법
+
+펑션을 사용한 빈 등록
+    public static void main(String[] args) {
+         new SpringApplicationBuilder()
+         .sources(Demospring51Application.class)
+         .initializers((ApplicationContextInitializer<GenericApplicationContext>)
+        applicationContext -> {
+         applicationContext.registerBean(MyBean.class);
+         })
+         .run(args);
+     }
+- 어플리케이션 구동 타임의 성능 
