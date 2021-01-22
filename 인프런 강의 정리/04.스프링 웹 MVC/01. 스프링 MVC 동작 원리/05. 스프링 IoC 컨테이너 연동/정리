@@ -1,0 +1,21 @@
+7. 스프링 IoC 컨테이너 연동
+(출처: https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc)
+
+서블릿 애플리케이션에 스프링 연동하기
+
+    ● 서블릿에서 스프링이 제공하는 IoC 컨테이너 활용하는 방법
+    ● 스프링이 제공하는 서블릿 구현체 DispatcherServlet 사용하기
+
+ContextLoaderListener
+    리스너-> ContextLoderListner
+         -> 스프링IoC컨테이너 Servlet Application 라이프사이클에 맞추어서 바인딩
+
+    ● 서블릿 리스너 구현체
+    ● ApplicationContext를 만들어 준다.
+    ● ApplicationContext를 서블릿 컨텍스트 라이프사이클에 따라 등록하고
+    소멸시켜준다.
+     ● 서블릿에서 IoC 컨테이너를 ServletContext를 통해 꺼내 사용할
+    수 있다
+
+    ContextLoderListner 가 Appconfig를 가지고 AnnotationConfigWebApplicationContext 만들면서 ( 어디에 ? ServletContext)
+    그안에는 HelloService가 들어있고 우리가 만든 Servlet에서는 HelloService 꺼내서 사용할 수있다. ->  IoC컨테이너 활용

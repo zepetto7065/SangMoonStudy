@@ -1,0 +1,47 @@
+서블릿 애플리케이션 개발
+maven project -> org.apache.maven.archetypes:mavne-archetype-webapp 선택시 "A simple Java Web application" next 후 진행
+
+Config 에서 톰캣 추가(톰캣이 다운로드받아서 있어야함)
+fix 에 가서 + 누른 후 war exloded 추가
+
+#맥사용자라면 tomcat bin ->
+ chmod +x ./*.sh
+해당 디렉토리 실행권한
+
+
+준비물: 메이븐, 톰캣
+
+서블릿 구현
+
+public class HelloServlet extends HttpServlet {
+    @Override
+    public void init() throws ServletException {
+     System.out.println("init");
+    }
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws
+    ServletException, IOException {
+        System.out.println("doGet");
+        resp.getWriter().write("Hello Servlet");
+    }
+    @Override
+    public void destroy() {
+     System.out.println("destroy");
+    }
+}
+
+서블릿 등록
+<!DOCTYPE web-app PUBLIC
+"-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+"http://java.sun.com/dtd/web-app_2_3.dtd" >
+    <web-app>
+    <display-name>Archetype Created Web Application</display-name>
+        <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>me.whiteship.HelloServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+        </servlet-mapping>
+    </web-app>
