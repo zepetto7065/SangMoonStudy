@@ -19,3 +19,7 @@ ContextLoaderListener
 
     ContextLoderListner 가 Appconfig를 가지고 AnnotationConfigWebApplicationContext 만들면서 ( 어디에 ? ServletContext)
     그안에는 HelloService가 들어있고 우리가 만든 Servlet에서는 HelloService 꺼내서 사용할 수있다. ->  IoC컨테이너 활용
+
+    DispathcherServlet에서 만든 Bean은 해당 Servlet 스코프안에서 작동,
+    Root WAC 에는 웹과 관련된것들이 없다. Dispatcher Servlet 안에 Servlet WAC 에 있다.
+    이런 경우를 xml 구현.
