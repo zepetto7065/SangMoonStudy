@@ -13,3 +13,10 @@ bean등록을 해주고 Autowired 설정을 함으로써 빈등록을 해주자
 
 물론 이 모든게 @SpringBootApplication으로 해결된다.
 @SpringBootApplication 안에 Configuration 이 있기때문에 그 자체 파일이 설정 파일이 된다.
+
+스프링 IoC 컨테이너의 중요한 인터페이스
+1. BeanFactory
+2. ApplicationContext ( BeancFactory 상속 받았음 )
+IoC컨테이너 기능과 추가적인 기능이 있다.
+-> BeanFactory에 비해 다양한 기능을 가지고 있는 인터페이스
+
