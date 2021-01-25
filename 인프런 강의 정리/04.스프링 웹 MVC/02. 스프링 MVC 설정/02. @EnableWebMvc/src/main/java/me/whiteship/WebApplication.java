@@ -1,4 +1,4 @@
-package me.zepetto;
+package me.whiteship;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
@@ -10,15 +10,15 @@ import javax.servlet.ServletRegistration;
 
 public class WebApplication implements WebApplicationInitializer {
 
-
+    @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
+        context.setServletContext(servletContext);
         context.register(WebConfig.class);
         context.refresh();
 
         DispatcherServlet dispatcherServlet = new DispatcherServlet(context);
-        final ServletRegistration.Dynamic app = servletContext.addServlet("app",dispatcherServlet);
+        ServletRegistration.Dynamic app = servletContext.addServlet("app", dispatcherServlet);
         app.addMapping("/app/*");
-
     }
 }

@@ -1,0 +1,12 @@
+스프링 부트의 “주관”이 적용된 자동 설정이 동작한다.
+    ● JSP 보다 Thymeleaf 선호
+    ● JSON 지원
+    ● 정적 리소스 지원 (+ 웰컴 페이지, 파비콘 등 지원)
+
+스프링 MVC 커스터마이징
+    ● application.properties
+    ● @Configuration + Implements WebMvcConfigurer: 스프링 부트의 스프링 MVC 자동설정 + 추가 설정 ( 대부분의 경우 합리적 )
+    ● @Configuration + @EnableWebMvc + Imlements WebMvcConfigurer: 스프링 부트의 스프링 MVC 자동설정 사용하지 않음.
+    하지만 SpringBoot를 사용하면 가장 편한다.
+
+
