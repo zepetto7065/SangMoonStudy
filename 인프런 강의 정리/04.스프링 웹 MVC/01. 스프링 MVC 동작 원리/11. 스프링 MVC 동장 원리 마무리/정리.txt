@@ -1,0 +1,23 @@
+13. 스프링 MVC 동작원리 정리
+결국엔 (굉장히 복잡한) 서블릿.
+= DispatcherServlet
+
+DispatcherServlet 초기화
+    1. 특정 타입에 해당하는 빈을 찾는다.
+    2. 없으면 기본 전략을 사용한다. (DispatcherServlet.properties)
+    ( 3. 스프링 부트의 경우 임베디드 톰캣 구동 -> dispatcher 서블릿을 만들어서 등록 , 1번과 같이 전략에 해당하는 빈 역시 스프링 부트에서 등록
+    따라서 기본 전략의 사용보다는 이미 스프링 부트에서 미리 등록되어진 설정을 사용한다.)
+
+스프링 부트 사용하지 않는 스프링 MVC
+
+    ● 서블릿 컨네이너(ex, 톰캣)에 등록한 웹 애플리케이션(WAR)에 DispatcherServlet을
+        등록한다.
+        ○ web.xml에 서블릿 등록
+        ○ 또는 WebApplicationInitializer에 자바 코드로 서블릿 등록 (스프링 3.1+, 서블릿 3.0+) -> WebApplication.class 참고
+
+    ● 세부 구성 요소는 빈 설정하기 나름.
+        스프링 부트를 사용하는 스프링 MVC
+    ● 자바 애플리케이션에 내장 톰캣을 만들고 그 안에 DispatcherServlet을
+    등록한다.
+        ○ 스프링 부트 자동 설정이 자동으로 해줌.
+    ● 스프링 부트의 주관에 따라 여러 인터페이스 구현체를 빈으로 등록한다.
