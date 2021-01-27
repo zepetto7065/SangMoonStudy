@@ -1,0 +1,13 @@
+
+WebRequest - getHeader header 정보등..
+
+
+참고:
+https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-argum
+ents
+
+핸들러 메소드 리턴: 주로 응답 또는 모델을 랜더링할 뷰에 대한 정보를 제공하는데 사용한다.
+
+
+https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-return
+types
