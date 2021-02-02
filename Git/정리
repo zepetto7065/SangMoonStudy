@@ -64,3 +64,6 @@ git fetch [원격저장소별명][브랜치이름]
 git merge [브랜치이름]
 
 git log --oneline
+
+git status 가 클린?
+워킹트리 == 스테이지 == head
