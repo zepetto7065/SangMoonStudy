@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../../:\00.private\02.GIT\study\인프런 강의 정리\06.자바ORM표준JPA프로그래밍 - 김영한\03. JPA 시작하기\01. Hello JPA - 프로젝트 생성\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
