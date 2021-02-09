@@ -1,0 +1,52 @@
+#엔티티 조회 1차 캐시
+
+영속성 컨텍스트는 내부에 1차캐시를 들고있다.
+Member member = new Member()
+member.setId("member1")
+member.setUsername("회원1")
+
+//객체를 저장한 상태 (영속)
+em.persist(member);
+
+객체를 저장하는 순간 , 영속성 컨텍스트 key member1 , 값이 member 객체 자체가 된다.
+이점? 조회시 
+Member findMember = em.find(Member.class, "member1") 
+EM 안에서 1차캐시를 뒤진후, 캐시에 있는 값을 조회 ( DB x) 
+
+그런데
+
+Member findMember = em.find(Member.class, "member2")
+1차 캐시에 없는 경우 -> JPA 가 DB에서 조회 -> DB 에 있으면 1차 캐시에 저장 후 -> Member2 반환
+
+# 영속 엔티티의 동일성 보장
+System.out.println(a == b); //동일성 비교 true
+마치 자바 컬렉션에서 꺼내면 같은 것처럼 -> 왜냐 1차 캐시가 있기 때문에 가능하다.
+1차 캐시로 반복 가능한 읽기 (REPEATABLE READ)등급의 트랜잭션 격리 수준을 데이터 베이스가 아닌 애플리케이션 차원에서 제공
+
+# 엔티티 등록시, 트랜잭션을 지원하는 쓰기 지연
+...
+em.persist(memberA)
+em.persist(memberB)
+//Insert SQL을 데이터베이스에 보내지않는다
+
+//커밋하는 순간 데이터베이스에 Insert SQL 을 보낸다
+transaction.commit();
+
+커밋하는 순간 JPA Flush ( 쓰기지연SQL저장소에 있던 쿼리들이 DB로 전송 ) 그리고 실제 DB Commit
+
+굳이? 이렇게 하면 persist 할때마다 쿼리를 날리면 최적화할 여지가 없다. Hiberanate의 경우 hibernate.jdbc.batch_size 라는 옵션으로 한방에 DB 커밋이 가능
+버퍼링같은 개념.
+
+
+# 엔티티수정 , 변경감지 ( 더티 체킹 )
+Member member = em.find(Member.class, 150L);
+member.setName("zzzz");
+
+em.persiste(member); //x JPA의 목적은 자바 컬렉션 다루듯이 . 그냥 사용하면 된다.
+
+// 커밋시 flush 호출 , Entity 와 스냅샷을 비교 -> 바뀌었을 경우 update 쿼리를 쓰기 지연 SQL 저장소에 반영 후 DB 반영
+transaction.commit();
+
+# 엔티티삭제
+-> update와 동일하게 delete 쿼리
+
