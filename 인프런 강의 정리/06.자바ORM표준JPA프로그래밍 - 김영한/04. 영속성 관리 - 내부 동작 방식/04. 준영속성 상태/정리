@@ -1,0 +1,15 @@
+#준영속 상태
+영속 -> 준영속
+영속 상태의 엔티티가 영속성 컨텍스트에서 분리 (detached)
+
+#준영속상태로 만드는 방법
+em.detach(entity)
+특정 엔티티만 준영속 상태로 전환
+em.clear()
+Entity Manager 통째로 초기화
+em.close()
+em 을 닫아서 종료
+
+#정리
+
+
