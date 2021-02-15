@@ -1,0 +1,14 @@
+JPA 는 어플리케이션 로딩시점에 DB테이블을 생성해주는 기능이있다 -> 개발에서만 사용하자
+
+엔티티 매핑된 애들을 테이블 지우고 다만들어낸다.
+<property name="hibernate.hbm2ddl.auto" value="create" />
+create-drop은 보통 테스트 케이스 작성시
+none 옵션값은 없으나 관례상 쓴다 (asdasd식으로 쓰는것 과 같다 )
+
+운영 장비에는 절대 create, create-drop, update 사용하면 안된다
+개발 초기 단계는 create 또는 update
+테스트 서버는 update 또는 validate
+스테이징과 운영 서버는 validate 또는 none -> 쿼리를 만들어줄때, 직접 만들어서 넘겨주기도 한다.
+
+유니크 제약 조건을 변경 가능 , 런타임 영향을 주지는 않고 DDL 생성시 영향
+

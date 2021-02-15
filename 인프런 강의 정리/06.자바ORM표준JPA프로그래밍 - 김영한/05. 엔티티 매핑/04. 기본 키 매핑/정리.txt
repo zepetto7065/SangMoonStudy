@@ -1,0 +1,4 @@
+#기본키 매핑
+@GeneratedValue(strategy = GenerationType.AUTO)
+
+interger 는 10 몇억이상 하면 한바퀴 돌기떄문에 Long..
