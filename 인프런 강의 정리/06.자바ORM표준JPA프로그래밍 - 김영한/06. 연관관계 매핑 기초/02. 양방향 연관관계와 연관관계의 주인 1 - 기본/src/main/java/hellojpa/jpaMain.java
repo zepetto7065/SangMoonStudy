@@ -1,5 +1,6 @@
 package hellojpa;
 
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -33,15 +34,11 @@ public class jpaMain
 
 
             final Member findMember = em.find(Member.class, member.getId());
-            final Team findTeam = findMember.getTeam();
-            System.out.println("findTeam.getName() = " + findTeam.getName());
+            final List<Member> members = findMember.getTeam().getMembers(); //member -> team -> member
 
-
-            //100번 팀이 있다고 가정
-            final Team newTeam = em.find(Team.class, 100L);
-            findMember.setTeam(newTeam); //update
-
-
+            for (Member m : members) {
+                System.out.println("m.getName() = " + m.getName());
+            }
 
             tx.commit();
         }catch(Exception e){

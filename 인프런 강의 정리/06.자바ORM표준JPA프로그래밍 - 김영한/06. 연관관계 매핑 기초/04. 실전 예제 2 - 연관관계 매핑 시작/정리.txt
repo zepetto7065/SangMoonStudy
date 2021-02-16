@@ -1,0 +1,26 @@
+identity 나는 모르겠고 DB가 알아서 해줘
+
+숫자면 무엇을 쓰면 좋을까 (id) -> Integer는 10억 쯤...Long을 쓰자. 공간은 두배가 차이가 나지만 거의 영향은 없지만 타입을 변경하는것이 힘들기 때문에 Long 권장
+
+identity 전략의 애매한점
+->DB에 커밋되는 시점에 insert , db에 들어가봐야 아이디값을 알 수있다? 영속성 컨텍스트에 관리가 id 값으로 되는데?
+-> 영속상태다? 1차캐시 안에 pk로 존재
+-> identity  는 jpa 입장에서 울며 겨자 먹기로 identity 전략에서만 예외적으로 em.persist에서 바로 db에 쿼리 실행
+
+            System.out.println("=============================");
+            em.persist(member);
+            //insert 쿼리를 했을떄 select 쿼리 안보이지만 db에서 가져오도록 내부적으로 짜여져있다.
+            System.out.println("member.id = "+ member.getId());
+            System.out.println("=============================");
+
+sequence 전략의 특징
+- em.persist할때 pk를 sequences에서 가져와야한다.
+-> persist하기전 시퀀스에서 pk값을 가져와서 영속성 컨텍스트테 저장
+-> 실제 트랜잭션에 실행하는 시점에 insert 실행
+-> 성능상 좋은가?
+-> 그래서 ... allocationSize로 최적화 -> 미리 50개를 올려놓는다!! 다음에는 50개 더해서 100번까지 DB에서 시퀀스 호출
+-> 여러 웹서버가 있어도 동시성 없이 다양한 문제들이 해결된다.
+-> 50개 이상을 해도 좋지만 웹 서버 내리는 시점에 구멍(낭비)가 생긴다.
+
+table 전략
+
