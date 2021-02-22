@@ -25,7 +25,7 @@ em.detached(member)
 
 영속(managed)
 영속성 컨텍스트(entityManager)에 관리 되는 상태
-//객체를 생성한 상태 (영속)
+//객체를 생성한 상태 (비영속)
 Member member = new Member()
 member.setId("member1")
 member.setUsername("회원1")
