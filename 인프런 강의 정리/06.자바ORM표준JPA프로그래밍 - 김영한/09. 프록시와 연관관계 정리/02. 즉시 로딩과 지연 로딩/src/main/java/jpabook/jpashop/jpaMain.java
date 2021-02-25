@@ -37,19 +37,19 @@ public class jpaMain
             em.flush();
             em.clear();
 
-//            Member m = em.find(Member.class, member.getId());
-//            System.out.println("m.getTeam().getClass() = " + m.getTeam().getClass());
-//
-//            System.out.println("================");
-//            System.out.println("teamName == "+ m.getTeam().getName());
-//            m.getTeam().getName(); //team의 실제 메서드를 사용하는 순간 쿼리가 나간다.
-//            System.out.println("================");
+            Member m = em.find(Member.class, member.getId());
+            System.out.println("m.getTeam().getClass() = " + m.getTeam().getClass());
+
+            System.out.println("================");
+            System.out.println("teamName == "+ m.getTeam().getName());
+            m.getTeam().getName(); //team의 실제 메서드를 사용하는 순간 쿼리가 나간다.
+            System.out.println("================");
 
             //JPA가 jpql을 번역하는 과정에서 Member의 team이 즉시로딩이 되어있네
             // 그러면 Member쿼리 나가고 또 별도의 쿼리가 나간다.-> select * from Member, select * from Team where Team id = ---
-            // SQL d
-            List<Member> members = em.createQuery("select m from Member m", Member.class)
-                    .getResultList();
+//            // SQL d
+//            List<Member> members = em.createQuery("select m from Member m", Member.class)
+//                    .getResultList();
 
 
             tx.commit();

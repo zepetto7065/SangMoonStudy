@@ -26,8 +26,8 @@ public class jpaMain
             parent.addChild(child2);
             //parent persit할떄 같이 되면 안되나?
             em.persist(parent);
-            em.persist(child1);
-            em.persist(child2);
+//            em.persist(child1);
+//            em.persist(child2);
 
             //orphan
             em.flush();
