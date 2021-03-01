@@ -1,20 +1,14 @@
 package jpabook.jpashop;
 
+import jpabook.jpashop.domain.Member;
+import jpabook.jpashop.domain.Team;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-import jpabook.jpashop.domain.Item;
-import jpabook.jpashop.domain.Member;
-import jpabook.jpashop.domain.Movie;
-import jpabook.jpashop.domain.Team;
-
-import java.awt.*;
-import java.time.LocalDateTime;
-
-public class jpaMain
-{
+public class jpaMain {
     public static void main(String[] args) {
 
         final EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
@@ -22,34 +16,30 @@ public class jpaMain
         final EntityTransaction tx = em.getTransaction();
 
         tx.begin();
-    //Member를 조회할때 Team도 DB에서 조회를 해야할까?
-        try{
+        //Member를 조회할때 Team도 DB에서 조회를 해야할까?
+        try {
             Member member = new Member();
             member.setUsername("hello");
 
             em.persist(member);
-            
+
             em.flush();
             em.clear();
-            
+
             //영속성 컨텍스트 초기화
-//            Member findMember = em.find(Member.class, member.getId());
+            //            Member findMember = em.find(Member.class, member.getId());
             Member findMember = em.getReference(Member.class, member.getId()); //가짜 레퍼런스
             System.out.println("findMember.getClass() = " + findMember.getClass()); //hibernate가 강제로 만든 프록시 클래스
             System.out.println("findMember.getId() = " + findMember.getId()); //getReference에서 사용
             System.out.println("findMember.getUsername() = " + findMember.getUsername());// 어? 없네 하고 DB에 쿼리를 날린다. 실제 사용될때 쿼리가 호출
 
-
-
-
 //            Member member = em.find(Member.class, 1L);
 //            printMemberAndTeam(member);
 //            printMember(member);
-            
             tx.commit();
-        }catch(Exception e){
+        } catch (Exception e) {
             tx.rollback();
-        }finally {
+        } finally {
             em.close();
         }
         emf.close();
