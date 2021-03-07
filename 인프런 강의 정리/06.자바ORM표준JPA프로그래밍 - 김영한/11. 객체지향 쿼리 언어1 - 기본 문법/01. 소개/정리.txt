@@ -1,0 +1,40 @@
+JPA의 다양한 쿼리방법
+- JPQL
+- JPA Criteria
+- QueryDSL
+- 네이티브 SQL
+
+JPQL
+- 기존
+EntityManager.find()
+객체 그래프 탐색
+
+-> JPQL , 문제는 엔티티 객체를 대상으로 검색해야한다. , SQL을 추상화한 JPQL 제공
+- JPQL 은 엔티티객체 대상, SQL 은 테이블 대상
+- string 으로 이루어져있기 떄문에 동적쿼리로 만들기 힘들다. ( ex - username이 있거나 없는 경우를 나눌 때 )
+- 문자를 더하는 경우도 있지만.. 버그 나기 쉽다.
+
+Criteria
+- JPA 표준 스펙 기술
+- 메서드 지원
+- 동적 쿼리를 짜는데 유리 하며 오타의한 에러를 잡아준다. -> 컴파일 타임에서 오류 잡아준다 ( 문자가 아닌 자바코드로 JPQL을 작성할 수 있다 )
+- sql 스럽지 않다.
+- 어렵다.. 혼란 발생 , 실용성 부족 유지보수 어려움
+
+QueryDSL
+- 대안 , OpenSource Library
+- 코드만으로 보아도 이해가능
+- 동적쿼리에서 막강하다
+
+네이티브 SQL
+- JPA가 직접 SQL을 사용하는 기능
+em.createNativeQuery
+
+JDBC 직접 사용 , MyBatis , SpringJdbcTemplate
+- flush -> commit , query 시 동작
+- native Query같은 경우 같이 쓰면 호출되는 시점이 다르는 이슈가 발생
+- JPA 우회해서 SQL 실행시점 직전에 flush가 방안
+
+JPQL 과 QueryDSL 같은 경우 섞어 쓴다. ( 가끔 복잡한 통계 쿼리의 경우 , SpringJdbcTemplate 함께 )
+
+

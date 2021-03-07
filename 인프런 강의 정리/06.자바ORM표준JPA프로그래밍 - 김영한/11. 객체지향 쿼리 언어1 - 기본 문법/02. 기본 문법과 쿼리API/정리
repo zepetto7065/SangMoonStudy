@@ -1,0 +1,20 @@
+JPQL
+select m from Member as m where m.age > 18
+- 엔티티와 속성은 대소문자 구분
+- JPQL 키워드는 대소문자 구분 x
+- 엔티티 이름 사용
+- 별칭은 필수 (m)
+
+TypeQuery , Query
+- TypeQuery : 기본적으로 엔티티, 반환타입이 명확
+- Query : 반환티입이 명확하지 않을 때
+
+결과 조회 API
+query.getResultList() 결과가 정확하지 않아도 됨
+query.SingleResult() 결과가 정확하게 하나, 단일 객체 반환
+결과 없으면 NoResultException
+둘이상이면 NonUniqueResultException
+
+파라미터 바인딩
+이름 기준 -> :username
+?1 -> 포지션 위치기반 파라미터바인딩 , 쓰지말자
