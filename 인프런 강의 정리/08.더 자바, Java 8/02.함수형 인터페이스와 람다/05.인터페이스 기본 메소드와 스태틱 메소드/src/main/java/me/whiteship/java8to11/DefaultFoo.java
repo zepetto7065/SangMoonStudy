@@ -4,13 +4,13 @@ public class DefaultFoo implements Foo, Bar {
 
     String name;
 
-    public DefaultFoo(String name){
+    public DefaultFoo(String name) {
         this.name = name;
     }
 
     @Override
     public void printNameUpperCase() {
-        System.out.println(this.name.toUpperCase());
+        System.out.println(name.toUpperCase());
     }
 
     @Override
@@ -22,4 +22,7 @@ public class DefaultFoo implements Foo, Bar {
     public String getName() {
         return this.name;
     }
+
+
+
 }

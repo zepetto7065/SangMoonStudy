@@ -15,33 +15,32 @@ public class App {
         name.add("adios");
 
         //forEach
+        //조금 더 손쉽게 출력이 가능하다.
         name.forEach(System.out::println);
-        System.out.println("=================");
+        System.out.println("=======forEach 종료==========");
 
         //spliterator
         //쪼갤수 있는 기능이 있는 iterator
         Spliterator<String> spliterator = name.spliterator();
         Spliterator<String> spliterator1 = spliterator.trySplit();
-        //전부다 순회하면서 출력, 순서가 중요하지 않을 떄
+        //전부 다 순회하면서 출력, 순서가 중요하지 않을 때
+        //없으면 false가 return
         while(spliterator.tryAdvance(System.out::println));
-        System.out.println("=================");
+        System.out.println("=======절반을 나눈 후==========");
         while(spliterator1.tryAdvance(System.out::println));
-
-        //이런식으로 stream 사용 가능.
-        name.stream().map(String::toUpperCase)
-                    .filter(s -> s.startsWith("s"))//K로 시작하는 걸 남기고
-                    .collect(Collectors.toSet());
         System.out.println("=================");
 
-        name.removeIf(s -> s.startsWith("s"));
+        name.removeIf(s -> s.startsWith("s")); //s로 시작하는 것을 빼라
         name.forEach(System.out::println);
-        System.out.println("=================");
+        System.out.println("=======removeIf 종료==========");
 
+        //정렬을 functional interface로
         Comparator<String> compareToIgnoreCase = String::compareToIgnoreCase;
         name.sort(compareToIgnoreCase.reversed());
         name.forEach(System.out::println);
+        System.out.println("=======Comparator 종료==========");
 
-        System.out.println("=================");
+        //functional interface를 사용하면서 API의 변화
         
 
     }
