@@ -21,7 +21,6 @@ public class App {
 
         boolean present = optional.isPresent();
         System.out.println(present);
-
 //        OnlineClass onlineClass = optional.get();
 //        System.out.println(onlineClass.getTitle());
 
@@ -36,10 +35,8 @@ public class App {
 //        System.out.println(onlineClass.getTitle());
 
         //없을 때, exception
-//        OnlineClass onlineClass = optional.orElseThrow(() -> {
-//            return new IllegalArgumentException();
-//        });
-//        System.out.println(onlineClass.getTitle());
+        OnlineClass onlineClass = optional.orElseThrow(() -> new IllegalArgumentException());
+        System.out.println(onlineClass.getTitle());
 
         //있다는 가정하에
 //        Optional<OnlineClass> onlineClass = optional
@@ -62,4 +59,4 @@ public class App {
         System.out.println("creating new online class");
         return new OnlineClass(10, "New Class", false);
     }
-}
+}$

@@ -46,7 +46,7 @@ public class OnlineClass {
     }
 
     public Optional<Progress> getProgress() {
-        return Optional.ofNullable(progress);
+        return null;
     }
 
     public void setProgress(Optional<Progress> progress) {
@@ -56,4 +56,6 @@ public class OnlineClass {
             this.progress = p;
         });
     }
+
 }
+

@@ -19,8 +19,14 @@ public class App {
         Duration studyDuration = spring_boot.getProgress().getStudyDuration(); //getProgress가 null이다.
         System.out.println(studyDuration);
 
-        //에러를 만드릭 좋은 코드, null check를 깜빡할수 있기 때문에..
+        OnlineClass spring_boot = new OnlineClass
+        spring_boot.setProgress(null);
+
+
+        //에러를 만들기 좋은 코드, null check를 깜빡할수 있기 때문에..
         Progress progress = spring_boot.getProgress();
+
+
         if(progress != null){
             System.out.println(studyDuration);
         }
@@ -33,7 +39,7 @@ public class App {
 
 
 
-
+    Optio
 
 
     }
