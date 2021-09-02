@@ -34,6 +34,8 @@ public class Main {
 
         SimpleDateFormat dateFormat = new SimpleDateFormat();
 
+
+        System.out.println("======================");
         //java8 DateTime API
         //1. 기계적 시간을 사용하는 방법. Instant
         Instant instant = Instant.now();
@@ -44,6 +46,7 @@ public class Main {
         System.out.println(zone);
         ZonedDateTime zonedDateTime = instant.atZone(zone);
         System.out.println(zonedDateTime);
+        System.out.println("======================");
 
         //2. 인간용 시간을 사용하는 방법. LocalDateTime
         LocalDateTime now = LocalDateTime.now(); //코드가 동작하고 있는 zone에 해당.
@@ -52,6 +55,7 @@ public class Main {
         System.out.println(birthDay);
         ZonedDateTime nowInKorea = ZonedDateTime.now(ZoneId.of("Asia/Seoul"));//특정 zone의 현재 시
         System.out.println(nowInKorea);
+        System.out.println("======================");
 
         //3. 기간을 표현하는 방법. Period
         LocalDate today = LocalDate.now();
