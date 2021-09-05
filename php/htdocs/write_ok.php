@@ -17,7 +17,8 @@
             reg_date = now();
         ";
         if($db->query($sql)){ //정상적으로 실행이 되면 1을 반환
-            header("Location:./");
+            $idx = $db -> lastInsertId(); 
+            header("Location:./view.php?idx={$idx}");
         }else{
             echo $sql;
             print_r($db->errorInfo());

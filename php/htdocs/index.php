@@ -24,7 +24,7 @@ try{
         <?php foreach ($rows as $row):?>
             <li>
                 <?php echo $row->idx ?> /
-                <?php echo $row->subject ?> /
+                <a href ="./view.php?idx=<?php echo $row->idx?>"><?php echo $row->subject ?></a> /
                 <?php echo $row->writer ?> /
                 <?php echo $row->reg_date ?>
             </li>
