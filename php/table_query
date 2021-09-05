@@ -1,0 +1,8 @@
+create table `board` (
+    `idx` int AUTO_INCREMENT,
+    `subject` varchar(255),
+    `writer` varchar(255),
+    `content` text,
+    `reg_date` datetime,
+    primary key(`idx`)
+)
