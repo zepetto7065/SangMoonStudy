@@ -1,15 +1,7 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>게시물 작성</title>
-</head>
-<body>
-    <form action="./write_ok.php" method="post">
+    <form action="" method="post">
         <fieldset>
             <legend>글작성</legend>
+            <input type="hidden" name="action" value="insert" />
                 <ul>
                     <li>
                         <label>
@@ -37,5 +29,3 @@
                 </p>
         </fieldset>
     </form>
-</body>
-</html>
