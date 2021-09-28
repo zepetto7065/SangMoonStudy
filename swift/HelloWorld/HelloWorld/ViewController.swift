@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var lblHello: UILabel!
-    @IBOutlet var txtName: UITextField!
+    @IBOutlet var lblHello: UILabel! //출력 레이블용 아웃렛 변수
+    @IBOutlet var txtName: UITextField! //이름 입력용 아웃렛 변수
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnSend(_ sender: UIButton) {
+        //action 함수
         lblHello.text = "Hello, " + txtName.text!
     }
     
