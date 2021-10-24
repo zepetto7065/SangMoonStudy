@@ -1,9 +1,6 @@
 package me.zepetto.thejavaapplication;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.DisplayNameGeneration;
-import org.junit.jupiter.api.DisplayNameGenerator;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.time.Duration;
 
@@ -11,8 +8,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 //메서드 이름의 전략을 정해준다. @DisplayName을 권장한다.
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS) //test에서 instance를 공유
 class StudyTest {
 
+    int value = 1; // 테스트 인스턴스는 각 테스트마다 새로이 만든다.
 
     @Test
     @DisplayName("스터디 만들기 \uD83D\uDE31")
