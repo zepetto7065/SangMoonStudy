@@ -17,12 +17,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func btnRun(_ sender: UIButton) {
+    @IBAction func runBtn(_ sender: UIButton) {
         var numbers:[Int] = [] //담아둘 배열
         var result = ""
 
         while numbers.count < 6 {
-            var number = Int.random(in: 1...45)
+            let number = Int.random(in: 1...45)
             if !numbers.contains(number){
                 numbers.append(number)
                 result.append(String(number) + " ")
