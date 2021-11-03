@@ -14,13 +14,10 @@ import org.springframework.data.domain.Sort;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.OptionalInt;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.doThrow;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class) //mockito에서 제공하는 extension
 class StudyServiceTest {
@@ -211,8 +208,8 @@ class StudyServiceTest {
 
     @Test
     void createNewStudy(@Mock MemberService memberService,
-                                           @Mock StudyRepository studyRepository) {
-        StudyService studyService = new StudyService(memberService,studyRepository);
+                        @Mock StudyRepository studyRepository) {
+        StudyService studyService = new StudyService(memberService, studyRepository);
         assertNotNull(studyService);
 
         Member member = new Member();
@@ -237,11 +234,9 @@ class StudyServiceTest {
 //        //또는
         doThrow(new IllegalArgumentException()).when(memberService).validate(1L);
 //
-        assertThrows(IllegalArgumentException.class, ()->{
-           memberService.validate(1L);
+        assertThrows(IllegalArgumentException.class, () -> {
+            memberService.validate(1L);
         });
-
-
 
 
 //        studyService.createNewStudy(1L, study);
@@ -251,7 +246,7 @@ class StudyServiceTest {
     //파라미터 형식으로 만드는 방법
     @Test
     void createNewStudy2(@Mock MemberService memberService,
-                        @Mock StudyRepository studyRepository) {
+                         @Mock StudyRepository studyRepository) {
         StudyService studyService = new StudyService(memberService, studyRepository);
         assertNotNull(studyService);
 
@@ -268,11 +263,34 @@ class StudyServiceTest {
         Optional<Member> byId = memberService.findById(1L);
         assertEquals("test@email.com", byId.get().getEmail());
 
-        assertThrows(RuntimeException.class, ()->{
+        assertThrows(RuntimeException.class, () -> {
             memberService.findById(2L);
         });
 
         assertEquals(Optional.empty(), memberService.findById(3L));
+    }
+
+    //stubbing 연습문제
+    @Test
+    void createNewStudy3(@Mock MemberService memberService,
+                         @Mock StudyRepository studyRepository) {
+        StudyService studyService = new StudyService(memberService, studyRepository);
+        assertNotNull(studyService);
+
+        Member member = new Member();
+        member.setId(1L);
+        member.setEmail("test@email.com");
+
+        Study study = new Study(10, "테스트");
+
+        //TODO memberService 객체에 findById 메소드를 1L 값으로 호출하면 member 객체를 리터하도록 stubbing
+        when(memberService.findById(1L)).thenReturn(Optional.of(member));
+
+        //TODO studyRepository 객체에 save 메소드를 study 객체로 호출하면 study 객체 그대로 리턴하도록 stubbing
+        when(studyRepository.save(study)).thenReturn(study);
+        
+        studyService.createNewStudy(1L, study);
+        assertEquals(member, study.getOwner());
     }
 
 }
