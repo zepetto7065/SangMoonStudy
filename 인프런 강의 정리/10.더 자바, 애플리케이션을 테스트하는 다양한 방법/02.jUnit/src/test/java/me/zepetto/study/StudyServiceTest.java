@@ -17,6 +17,8 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class) //mockito에서 제공하는 extension
@@ -288,9 +290,41 @@ class StudyServiceTest {
 
         //TODO studyRepository 객체에 save 메소드를 study 객체로 호출하면 study 객체 그대로 리턴하도록 stubbing
         when(studyRepository.save(study)).thenReturn(study);
-        
+
         studyService.createNewStudy(1L, study);
         assertEquals(member, study.getOwner());
+    }
+
+    //Mock 객체 확인
+    @Test
+    void createNewStudy4() {
+        //Given
+        StudyService studyService = new StudyService(memberService, studyRepository);
+        assertNotNull(studyService);
+
+        Member member = new Member();
+        member.setId(1L);
+        member.setEmail("test@email.com");
+
+        Study study = new Study(10, "테스트");
+
+        when(memberService.findById(1L)).thenReturn(Optional.of(member));
+        when(studyRepository.save(study)).thenReturn(study);
+
+        given(memberService.findById(1L)).willReturn(Optional.of(member));
+        given(studyRepository.save(study)).willReturn(study);
+
+        //When
+        studyService.createNewStudy(1L, study);
+        //Then
+        assertEquals(member, study.getOwner());
+
+        //notify가 호출이 되었는지?
+        //몇번을 정확히 얼마나? 1번 호출이 되어야 한다.
+        verify(memberService, times(1)).notify(any());
+        verify(memberService, never()).validate(any());
+
+        then(memberService).should(times(1)).notify(study);
     }
 
 }
