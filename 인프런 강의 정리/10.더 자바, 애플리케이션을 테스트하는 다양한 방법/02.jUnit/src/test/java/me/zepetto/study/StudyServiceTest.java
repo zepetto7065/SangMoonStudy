@@ -46,6 +46,11 @@ class StudyServiceTest {
             public void validate(Long memberId) {
 
             }
+
+            @Override
+            public void notify(Study newStudy) {
+
+            }
         };
         //직접 ..
         StudyRepository studyRepository = new StudyRepository() {
