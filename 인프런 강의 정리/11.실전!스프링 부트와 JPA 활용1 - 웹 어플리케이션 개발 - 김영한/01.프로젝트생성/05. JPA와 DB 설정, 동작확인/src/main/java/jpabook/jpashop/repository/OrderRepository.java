@@ -89,6 +89,10 @@ public class OrderRepository {
         return query.getResultList();
     }
 
+    public List<Order> searchOrders(OrderSearch orderSearch) {
+        return null;
+    }
+
 //    public List<Order> findAll(OrderSearch orderSearch){
 //        return
 //    }

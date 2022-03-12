@@ -33,7 +33,7 @@ public class Order {
     @JoinColumn(name = "delivery_id")
     private Delivery delivery;
 
-    private LocalDateTime orderTime;
+    private LocalDateTime orderDate;
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status; //주문 상태
@@ -61,7 +61,7 @@ public class Order {
         order.setDelivery(delivery);
         Arrays.stream(orderItems).forEach(order::addOrderItem);
         order.setStatus(OrderStatus.ORDER);
-        order.setOrderTime(LocalDateTime.now());
+        order.setOrderDate(LocalDateTime.now());
         return order;
     }
 

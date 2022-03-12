@@ -63,4 +63,8 @@ public class OrderService
     public List<Order> findOrder(OrderSearch orderSearch){
         return orderRepository.searchOrder(orderSearch);
     }
+
+    public List<Order> findOrders(OrderSearch orderSearch) {
+        return orderRepository.searchOrder(orderSearch);
+    }
 }
