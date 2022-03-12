@@ -38,3 +38,5 @@ out/
 gradlew
 gradle
 gradlew.bat
+
+src/main/resources/application-prod.yml
