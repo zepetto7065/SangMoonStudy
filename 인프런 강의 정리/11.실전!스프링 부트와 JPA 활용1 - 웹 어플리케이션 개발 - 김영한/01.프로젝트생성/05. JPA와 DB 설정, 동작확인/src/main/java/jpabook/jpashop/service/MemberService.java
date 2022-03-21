@@ -43,4 +43,10 @@ public class MemberService {
         return memberRepository.findOne(memberId);
     }
 
+    @Transactional
+    public void update(Long id, String name) {
+        Member member = memberRepository.findOne(id);
+        member.setName(name);
+        //영속상태를 끊긴 객체를 넘겨도 되지만,
+    }
 }
