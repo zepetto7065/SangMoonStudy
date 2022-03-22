@@ -27,7 +27,7 @@ public class OrderRepository {
     }
 
     //검색이 있어야하는데..
-    public List<Order> searchOrder(OrderSearch orderSearch){
+    public List<Order> findAllByString(OrderSearch orderSearch){
         String jpql = "select o from Order o join o.member m";
         boolean isFirstCondition = true;
 
