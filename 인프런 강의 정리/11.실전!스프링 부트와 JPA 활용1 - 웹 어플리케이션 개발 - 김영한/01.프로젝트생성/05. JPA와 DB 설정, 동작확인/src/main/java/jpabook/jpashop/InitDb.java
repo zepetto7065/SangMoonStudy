@@ -20,6 +20,7 @@ public class InitDb {
     public void init(){
         initService.dbinit1();
         initService.dbinit2();
+        initService.dbinit3();
     }
 
     @Component
@@ -29,6 +30,9 @@ public class InitDb {
         //별도의 빈으로 등록하는 이유는 transaction 먹이는 등 ,
         //postConstruct 안에서 잘안된다.
         private final EntityManager em;
+        private final ItemRepository2 itemRepository2;
+
+
         public void dbinit1() {
             Member member = createMember("userA", "서울", "1", "11");
             em.persist(member);
@@ -83,6 +87,16 @@ public class InitDb {
             book1.setPrice(price);
             book1.setStockQuantity(stockQuantity);
             return book1;
+        }
+
+        public void dbinit3(){
+            Book book = new Book();
+            book.setAuthor("test");
+            book.setIsbn("isbn");
+            book.setStockQuantity(100);
+            book.setName("test");
+
+            itemRepository2.save(book);
         }
     }
 }
