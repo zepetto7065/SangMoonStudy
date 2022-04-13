@@ -6,9 +6,11 @@ spring:
     password:
     driver-class-name: org.h2.Driver
   jpa:
+    open-in-view: false
     hibernate:
       ddl-auto: create #자동 테이블 생성
     properties:
       hibernate:
-        #        show_sql: true #system.out에서 찍는 로그
+        #show_sql: true #system.out에서 찍는 로그
         format_sql: true
+        default_batch_fetch_size: 100
