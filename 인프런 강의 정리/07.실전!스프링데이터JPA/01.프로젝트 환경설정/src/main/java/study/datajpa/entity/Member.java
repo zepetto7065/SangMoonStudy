@@ -1,23 +1,49 @@
 package study.datajpa.entity;
 
-import lombok.Getter;
-import lombok.Setter;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import lombok.*;
+
+import javax.persistence.*;
 
 @Entity
 @Getter @Setter
-public class Member {
+@ToString(of={"id", "username", "age"})
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NamedQuery(
+        name = "Member.findByUserName",
+        query="select m from Member m where m.username = :username"
+)
+@NamedEntityGraph(name = "Member.all", attributeNodes = @NamedAttributeNode("team"))
+public class Member extends JpaBaseEntity{
 
     @Id @GeneratedValue
+    @Column(name="member_id")
     private Long id;
     private String username;
+    private int age;
 
-    protected Member() {
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="team_id")
+    private Team team;
+
+    public Member(String username, int age, Team team) {
+        this.username = username;
+        this.age = age;
+        if(team != null){
+            changeTeam(team);
+        }
     }
 
     public Member(String username) {
         this.username = username;
+    }
+
+    public Member(String username, int age) {
+        this.username = username;
+        this.age = age;
+    }
+
+    public void changeTeam(Team team){
+        this.team = team;
+        team.getMembers().add(this);
     }
 }
