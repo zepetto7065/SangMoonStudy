@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07a8c0ad-3c9c-4ab4-99af-e2d48e3f0486" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../InterparkTicket/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterparkTicket/.idea/InterparkTicket.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterparkTicket/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterparkTicket/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterparkTicket/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterparkTicket/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterparkTicket/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot1/src/main/java/me/zepetto/boot1/EventNotify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot1/src/main/java/me/zepetto/boot1/MyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot1/src/main/java/me/zepetto/boot1/MyFilter2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot1/src/main/java/me/zepetto/boot1/MyFilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/src/main/java/me/zepetto/boot2/Boot2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/src/main/java/me/zepetto/boot2/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/src/main/java/me/zepetto/boot2/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/src/main/java/me/zepetto/boot2/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVCvsWebFlux/boot2/src/test/java/me/zepetto/boot2/Boot2ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot/LoginTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camping_script/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camping_script/.idea/camping_script.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camping_script/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camping_script/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camping_script/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camping_script/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../camping_script/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/dto/MemberDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/entity/BaseTimeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/entity/JpaBaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/entity/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/repository/MemberRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/repository/MemberRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/repository/TeamJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/repository/TeamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/repository/UsernameOnly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/repository/UsernameOnlyDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/test/java/study/datajpa/entity/MemberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/DataJpaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/DataJpaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/repository/MemberJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/repository/MemberJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/java/study/datajpa/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/test/java/study/datajpa/DataJpaApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/test/java/study/datajpa/DataJpaApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/test/java/study/datajpa/repository/MemberJpaRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/test/java/study/datajpa/repository/MemberJpaRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/test/java/study/datajpa/repository/MemberRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../인프런 강의 정리/07.실전!스프링데이터JPA/01.프로젝트 환경설정/src/test/java/study/datajpa/repository/MemberRepositoryTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2APq1i5Wcpbdb0PLeEyXcXVd4xO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07a8c0ad-3c9c-4ab4-99af-e2d48e3f0486" name="Changes" comment="" />
+      <created>1654921357080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654921357080</updated>
+      <workItem from="1654921359434" duration="26000" />
+    </task>
+    <servers />
+  </component>
+</project>
