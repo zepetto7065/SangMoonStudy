@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "226159835476",
+    "project_id": "instagram-clon-2b8bd",
+    "storage_bucket": "instagram-clon-2b8bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226159835476:android:50464788a9ff3646fe30c1",
+        "android_client_info": {
+          "package_name": "zepetto.com.instagram_clon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226159835476-e9ecklp1dilv5ur1nn0sm02e2a48csst.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zepetto.com.instagram_clon",
+            "certificate_hash": "9a2eb0a911e58a6a7f552f7c0bb9d8a6b4338925"
+          }
+        },
+        {
+          "client_id": "226159835476-n7csioh4acsa8i0tu139q2mbmadkgij8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmPSfF2UioM72pmjjlq3l7f7zyJnZhqX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226159835476-n7csioh4acsa8i0tu139q2mbmadkgij8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

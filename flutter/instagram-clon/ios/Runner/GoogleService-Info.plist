@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>226159835476-sjckabk73aodtb90ifnsenn6shoeielh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.226159835476-sjckabk73aodtb90ifnsenn6shoeielh</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>226159835476-e9ecklp1dilv5ur1nn0sm02e2a48csst.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDcFl9kxlWtTsE81S2HZsru9Is7ZsOpB6M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>226159835476</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>zepetto.com.instagramClon</string>
+	<key>PROJECT_ID</key>
+	<string>instagram-clon-2b8bd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>instagram-clon-2b8bd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:226159835476:ios:cbc847dd935306aefe30c1</string>
+</dict>
+</plist>

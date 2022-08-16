@@ -1,7 +1,14 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:instagram_clon/account_page.dart';
+import 'package:instagram_clon/home_page.dart';
+import 'package:instagram_clon/search_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class TabPage extends StatefulWidget {
-  const TabPage({Key? key}) : super(key: key);
+  final User user;
+
+  TabPage(this.user);
 
   @override
   State<TabPage> createState() => _TabPageState();
@@ -9,13 +16,23 @@ class TabPage extends StatefulWidget {
 
 class _TabPageState extends State<TabPage> {
   int _selectedIndex = 0;
-  List _pages = [Text('page1'), Text('page2'), Text('page3')];
+  List _pages;
+
+  @override
+  void initState() {
+    _pages = [
+    HomePage(widget.user),
+    SearchPage(),
+    AccountPage(widget.user)
+    ];
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(child: _pages[_selectedIndex]),
       bottomNavigationBar: BottomNavigationBar(
+        fixedColor: Colors.black,
         onTap: _onItemTapped,
         currentIndex: _selectedIndex,
         items: <BottomNavigationBarItem>[
