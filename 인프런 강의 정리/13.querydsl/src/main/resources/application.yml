@@ -12,7 +12,7 @@ spring:
       hibernate: #system.out 으로 출력
         show_sql: true
         format_sql: true
-
+        use_sql_comment: true
 # logger 로 출력
 logging.level:
   org.hibernate.SQL: debug

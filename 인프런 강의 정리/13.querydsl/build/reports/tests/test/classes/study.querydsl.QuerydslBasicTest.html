@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - QuerydslBasicTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>QuerydslBasicTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/study.querydsl.html">study.querydsl</a> &gt; QuerydslBasicTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.092s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">startJPQL()</td>
+<td class="success">0.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">startQuerydsl()</td>
+<td class="success">0.022s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2022-11-02 20:29:19.440  INFO 28734 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [study.querydsl.QuerydslBasicTest], using SpringBootContextLoader
+2022-11-02 20:29:19.441  INFO 28734 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [study.querydsl.QuerydslBasicTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-11-02 20:29:19.441  INFO 28734 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [study.querydsl.QuerydslBasicTest]: QuerydslBasicTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-11-02 20:29:19.442  INFO 28734 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration study.querydsl.QuerydslApplication for test class study.querydsl.QuerydslBasicTest
+2022-11-02 20:29:19.444  INFO 28734 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-11-02 20:29:19.444  INFO 28734 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5980e29f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cdd156b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@487bc2fe, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@58038583, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6491006, org.springframework.test.context.transaction.TransactionalTestExecutionListener@42fb2be9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@54816d7a, org.springframework.test.context.event.EventPublishingTestExecutionListener@106ac5f4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5eed2edf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4552e288, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1a67bde5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c648e38, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6bc8d8bd]
+2022-11-02 20:29:19.448  INFO 28734 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@1e733bb5 testClass = QuerydslBasicTest, testInstance = study.querydsl.QuerydslBasicTest@669e730d, testMethod = startJPQL@QuerydslBasicTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4b3e4253 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@58ebfd03, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2fea7088, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@30d4b288, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a3329b9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@1add90e0]; rollback [true]
+2022-11-02 20:29:19.451 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.453  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559452 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.460 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.462  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559462 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.462 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.464  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559464 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.465 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.467  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559467 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.467 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.469  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559469 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.469 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.470  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559470 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.483 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        team
+        (name, id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        team
+        (name, id) 
+    values
+        (?, ?)
+2022-11-02 20:29:19.485 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [teamA]
+2022-11-02 20:29:19.486 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [2]
+2022-11-02 20:29:19.487  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559487 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+insert into team (name, id) values (?, ?)
+insert into team (name, id) values ('teamA', 2);
+2022-11-02 20:29:19.487 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        team
+        (name, id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        team
+        (name, id) 
+    values
+        (?, ?)
+2022-11-02 20:29:19.488 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [teamB]
+2022-11-02 20:29:19.488 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [3]
+2022-11-02 20:29:19.489  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559489 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+insert into team (name, id) values (?, ?)
+insert into team (name, id) values ('teamB', 3);
+2022-11-02 20:29:19.489 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (age, team_id, username, member_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        member
+        (age, team_id, username, member_id) 
+    values
+        (?, ?, ?, ?)
+2022-11-02 20:29:19.491 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [10]
+2022-11-02 20:29:19.491 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [2]
+2022-11-02 20:29:19.491 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [member1]
+2022-11-02 20:29:19.491 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [4]
+2022-11-02 20:29:19.493  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559493 | took 1ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+insert into member (age, team_id, username, member_id) values (?, ?, ?, ?)
+insert into member (age, team_id, username, member_id) values (10, 2, 'member1', 4);
+2022-11-02 20:29:19.493 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (age, team_id, username, member_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        member
+        (age, team_id, username, member_id) 
+    values
+        (?, ?, ?, ?)
+2022-11-02 20:29:19.494 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [20]
+2022-11-02 20:29:19.495 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [2]
+2022-11-02 20:29:19.495 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [member2]
+2022-11-02 20:29:19.495 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [5]
+2022-11-02 20:29:19.496  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559496 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+insert into member (age, team_id, username, member_id) values (?, ?, ?, ?)
+insert into member (age, team_id, username, member_id) values (20, 2, 'member2', 5);
+2022-11-02 20:29:19.496 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (age, team_id, username, member_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        member
+        (age, team_id, username, member_id) 
+    values
+        (?, ?, ?, ?)
+2022-11-02 20:29:19.497 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [30]
+2022-11-02 20:29:19.497 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [3]
+2022-11-02 20:29:19.497 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [member3]
+2022-11-02 20:29:19.497 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [6]
+2022-11-02 20:29:19.498  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559498 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+insert into member (age, team_id, username, member_id) values (?, ?, ?, ?)
+insert into member (age, team_id, username, member_id) values (30, 3, 'member3', 6);
+2022-11-02 20:29:19.499 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (age, team_id, username, member_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        member
+        (age, team_id, username, member_id) 
+    values
+        (?, ?, ?, ?)
+2022-11-02 20:29:19.500 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [40]
+2022-11-02 20:29:19.500 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [3]
+2022-11-02 20:29:19.500 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [member4]
+2022-11-02 20:29:19.501 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [7]
+2022-11-02 20:29:19.502  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559502 | took 1ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+insert into member (age, team_id, username, member_id) values (?, ?, ?, ?)
+insert into member (age, team_id, username, member_id) values (40, 3, 'member4', 7);
+2022-11-02 20:29:19.503 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        member0_.member_id as member_i1_1_,
+        member0_.age as age2_1_,
+        member0_.team_id as team_id4_1_,
+        member0_.username as username3_1_ 
+    from
+        member member0_ 
+    where
+        member0_.username=?
+Hibernate: 
+    select
+        member0_.member_id as member_i1_1_,
+        member0_.age as age2_1_,
+        member0_.team_id as team_id4_1_,
+        member0_.username as username3_1_ 
+    from
+        member member0_ 
+    where
+        member0_.username=?
+2022-11-02 20:29:19.505 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [member1]
+2022-11-02 20:29:19.506  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559506 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+select member0_.member_id as member_i1_1_, member0_.age as age2_1_, member0_.team_id as team_id4_1_, member0_.username as username3_1_ from member member0_ where member0_.username=?
+select member0_.member_id as member_i1_1_, member0_.age as age2_1_, member0_.team_id as team_id4_1_, member0_.username as username3_1_ from member member0_ where member0_.username='member1';
+2022-11-02 20:29:19.506 TRACE 28734 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([member_i1_1_] : [BIGINT]) - [4]
+2022-11-02 20:29:19.513  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559513 | took 1ms | rollback | connection 4| url jdbc:h2:tcp://localhost/~/querydsl
+
+;
+2022-11-02 20:29:19.516  INFO 28734 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@1e733bb5 testClass = QuerydslBasicTest, testInstance = study.querydsl.QuerydslBasicTest@669e730d, testMethod = startJPQL@QuerydslBasicTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4b3e4253 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@58ebfd03, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2fea7088, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@30d4b288, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a3329b9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true]]
+2022-11-02 20:29:19.520  INFO 28734 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@1e733bb5 testClass = QuerydslBasicTest, testInstance = study.querydsl.QuerydslBasicTest@6d4df1d2, testMethod = startQuerydsl@QuerydslBasicTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4b3e4253 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@58ebfd03, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2fea7088, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@30d4b288, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a3329b9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@1add90e0]; rollback [true]
+2022-11-02 20:29:19.521 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.523  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559523 | took 0ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.524 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.526  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559526 | took 0ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.527 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.528  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559528 | took 0ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.529 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.530  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559530 | took 0ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.531 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.532  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559532 | took 0ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.533 DEBUG 28734 --- [    Test worker] org.hibernate.SQL                        : 
+    call next value for hibernate_sequence
+Hibernate: 
+    call next value for hibernate_sequence
+2022-11-02 20:29:19.534  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559534 | took 0ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+call next value for hibernate_sequence
+call next value for hibernate_sequence;
+2022-11-02 20:29:19.537  INFO 28734 --- [    Test worker] p6spy                                    : #1667388559537 | took 0ms | rollback | connection 5| url jdbc:h2:tcp://localhost/~/querydsl
+
+;
+2022-11-02 20:29:19.539  INFO 28734 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@1e733bb5 testClass = QuerydslBasicTest, testInstance = study.querydsl.QuerydslBasicTest@6d4df1d2, testMethod = startQuerydsl@QuerydslBasicTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4b3e4253 testClass = QuerydslBasicTest, locations = '{}', classes = '{class study.querydsl.QuerydslApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@58ebfd03, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2fea7088, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@30d4b288, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a3329b9], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -&gt; true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -&gt; true]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5</a> at 2022. 11. 2. 오후 8:29:19</p>
+</div>
+</div>
+</body>
+</html>
